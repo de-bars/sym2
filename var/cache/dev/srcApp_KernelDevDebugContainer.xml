@@ -86,6 +86,7 @@
     <parameter key="kernel.container_class">srcApp_KernelDevDebugContainer</parameter>
     <parameter key="container.dumper.inline_class_loader">true</parameter>
     <parameter key="blogger_blog.emails.contact_email">contact@email.com</parameter>
+    <parameter key="blogger_blog.comments.latest_comment_limit">10</parameter>
     <parameter key="fragment.renderer.hinclude.global_template"></parameter>
     <parameter key="fragment.path">/_fragment</parameter>
     <parameter key="kernel.secret">%env(APP_SECRET)%</parameter>
@@ -437,6 +438,9 @@
     </service>
     <service id="App\Blogger\BlogBundle\Form\EnquiryType" class="App\Blogger\BlogBundle\Form\EnquiryType" autowire="true" autoconfigure="true">
       <tag name="form.type"/>
+    </service>
+    <service id="App\Twig\Extensions\AppExtension" class="App\Twig\Extensions\AppExtension" autowire="true" autoconfigure="true">
+      <tag name="twig.extension"/>
     </service>
     <service id="controller_name_converter" class="Symfony\Bundle\FrameworkBundle\Controller\ControllerNameParser" public="false">
       <tag name="monolog.logger" channel="request"/>
@@ -3927,6 +3931,9 @@
         <argument type="service" id="twig.extension.dump"/>
       </call>
       <call method="addExtension">
+        <argument type="service" id="App\Twig\Extensions\AppExtension"/>
+      </call>
+      <call method="addExtension">
         <argument type="service" id="doctrine.twig.doctrine_extension"/>
       </call>
       <call method="addExtension">
@@ -4548,6 +4555,9 @@
     <service id=".abstract.instanceof.App\Blogger\BlogBundle\Form\CommentType" class="App\Blogger\BlogBundle\Form\CommentType" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".instanceof.Symfony\Component\Form\FormTypeInterface.0.App\Blogger\BlogBundle\Form\EnquiryType" class="App\Blogger\BlogBundle\Form\EnquiryType" autowire="true" abstract="true"/>
     <service id=".abstract.instanceof.App\Blogger\BlogBundle\Form\EnquiryType" class="App\Blogger\BlogBundle\Form\EnquiryType" autowire="true" autoconfigure="true" abstract="true"/>
+    <service id=".instanceof.Twig_ExtensionInterface.0.App\Twig\Extensions\AppExtension" class="App\Twig\Extensions\AppExtension" autowire="true" abstract="true"/>
+    <service id=".instanceof.Twig\Extension\ExtensionInterface.0.App\Twig\Extensions\AppExtension" class="App\Twig\Extensions\AppExtension" autowire="true" abstract="true"/>
+    <service id=".abstract.instanceof.App\Twig\Extensions\AppExtension" class="App\Twig\Extensions\AppExtension" autowire="true" autoconfigure="true" abstract="true"/>
     <service id="maker.auto_command.make_auth" class="Symfony\Bundle\MakerBundle\Command\MakerCommand" public="false">
       <tag name="console.command" command="make:auth"/>
       <argument type="service" id="maker.maker.make_authenticator"/>
