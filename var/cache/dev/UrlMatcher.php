@@ -13,6 +13,9 @@ return [
         '/_profiler/search_bar' => [[['_route' => '_profiler_search_bar', '_controller' => 'web_profiler.controller.profiler::searchBarAction'], null, null, null, false, false, null]],
         '/_profiler/phpinfo' => [[['_route' => '_profiler_phpinfo', '_controller' => 'web_profiler.controller.profiler::phpinfoAction'], null, null, null, false, false, null]],
         '/_profiler/open' => [[['_route' => '_profiler_open_file', '_controller' => 'web_profiler.controller.profiler::openAction'], null, null, null, false, false, null]],
+        '/' => [[['_route' => 'BloggerBlogBundle_homepage', '_controller' => 'App\\Blogger\\BlogBundle\\Controller\\PageController::indexAction'], null, null, null, false, false, null]],
+        '/about' => [[['_route' => 'BloggerBlogBundle_about', '_controller' => 'App\\Blogger\\BlogBundle\\Controller\\PageController::aboutAction'], null, null, null, false, false, null]],
+        '/contact' => [[['_route' => 'BloggerBlogBundle_contact', '_controller' => 'App\\Blogger\\BlogBundle\\Controller\\PageController::contactAction'], null, null, null, false, false, null]],
     ],
     [ // $regexpList
         0 => '{^(?'
@@ -31,6 +34,8 @@ return [
                         .'|(*:159)'
                     .')'
                 .')'
+                .'|/(\\d+)(*:175)'
+                .'|/comment/(\\d+)(*:197)'
             .')/?$}sDu',
     ],
     [ // $dynamicRoutes
@@ -40,8 +45,10 @@ return [
         116 => [[['_route' => '_profiler_router', '_controller' => 'web_profiler.controller.router::panelAction'], ['token'], null, null, false, false, null]],
         136 => [[['_route' => '_profiler_exception', '_controller' => 'web_profiler.controller.exception::showAction'], ['token'], null, null, false, false, null]],
         149 => [[['_route' => '_profiler_exception_css', '_controller' => 'web_profiler.controller.exception::cssAction'], ['token'], null, null, false, false, null]],
-        159 => [
-            [['_route' => '_profiler', '_controller' => 'web_profiler.controller.profiler::panelAction'], ['token'], null, null, false, true, null],
+        159 => [[['_route' => '_profiler', '_controller' => 'web_profiler.controller.profiler::panelAction'], ['token'], null, null, false, true, null]],
+        175 => [[['_route' => 'BloggerBlogBundle_blog_show', '_controller' => 'App\\Blogger\\BlogBundle\\Controller\\BlogController::showAction'], ['id'], null, null, false, true, null]],
+        197 => [
+            [['_route' => 'BloggerBlogBundle_comment_create', '_controller' => 'App\\Blogger\\BlogBundle\\Controller\\CommentController::createAction'], ['blog_id'], null, null, false, true, null],
             [null, null, null, null, false, false, 0],
         ],
     ],

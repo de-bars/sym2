@@ -22,6 +22,7 @@
       <parameter key="DebugBundle">Symfony\Bundle\DebugBundle\DebugBundle</parameter>
       <parameter key="MakerBundle">Symfony\Bundle\MakerBundle\MakerBundle</parameter>
       <parameter key="WebServerBundle">Symfony\Bundle\WebServerBundle\WebServerBundle</parameter>
+      <parameter key="BloggerBlogBundle">App\Blogger\BlogBundle\BloggerBlogBundle</parameter>
     </parameter>
     <parameter key="kernel.bundles_metadata" type="collection">
       <parameter key="FrameworkBundle" type="collection">
@@ -76,10 +77,15 @@
         <parameter key="path">D:\OSPanel\domains\sym2\vendor\symfony\web-server-bundle</parameter>
         <parameter key="namespace">Symfony\Bundle\WebServerBundle</parameter>
       </parameter>
+      <parameter key="BloggerBlogBundle" type="collection">
+        <parameter key="path">D:\OSPanel\domains\sym2\src\Blogger\BlogBundle</parameter>
+        <parameter key="namespace">App\Blogger\BlogBundle</parameter>
+      </parameter>
     </parameter>
     <parameter key="kernel.charset">UTF-8</parameter>
     <parameter key="kernel.container_class">srcApp_KernelDevDebugContainer</parameter>
     <parameter key="container.dumper.inline_class_loader">true</parameter>
+    <parameter key="blogger_blog.emails.contact_email">contact@email.com</parameter>
     <parameter key="fragment.renderer.hinclude.global_template"></parameter>
     <parameter key="fragment.path">/_fragment</parameter>
     <parameter key="kernel.secret">%env(APP_SECRET)%</parameter>
@@ -248,14 +254,23 @@
     <parameter key="security.authentication.session_strategy.strategy">migrate</parameter>
     <parameter key="security.access.always_authenticate_before_granting">false</parameter>
     <parameter key="security.authentication.hide_user_not_found">true</parameter>
-    <parameter key="swiftmailer.mailer.default.transport.name">dynamic</parameter>
+    <parameter key="swiftmailer.mailer.default.transport.name" type="string">null</parameter>
+    <parameter key="swiftmailer.mailer.default.transport.smtp.encryption">null</parameter>
+    <parameter key="swiftmailer.mailer.default.transport.smtp.port">25</parameter>
+    <parameter key="swiftmailer.mailer.default.transport.smtp.host">localhost</parameter>
+    <parameter key="swiftmailer.mailer.default.transport.smtp.username">null</parameter>
+    <parameter key="swiftmailer.mailer.default.transport.smtp.password">null</parameter>
+    <parameter key="swiftmailer.mailer.default.transport.smtp.auth_mode">null</parameter>
+    <parameter key="swiftmailer.mailer.default.transport.smtp.timeout">30</parameter>
+    <parameter key="swiftmailer.mailer.default.transport.smtp.source_ip">null</parameter>
+    <parameter key="swiftmailer.mailer.default.transport.smtp.local_domain">null</parameter>
     <parameter key="swiftmailer.spool.default.memory.path">D:\OSPanel\domains\sym2\var\cache\dev/swiftmailer/spool/default</parameter>
     <parameter key="swiftmailer.mailer.default.spool.enabled">true</parameter>
     <parameter key="swiftmailer.mailer.default.plugin.impersonate">null</parameter>
     <parameter key="swiftmailer.mailer.default.single_address">null</parameter>
-    <parameter key="swiftmailer.mailer.default.delivery.enabled">true</parameter>
+    <parameter key="swiftmailer.mailer.default.delivery.enabled">false</parameter>
     <parameter key="swiftmailer.spool.enabled">true</parameter>
-    <parameter key="swiftmailer.delivery.enabled">true</parameter>
+    <parameter key="swiftmailer.delivery.enabled">false</parameter>
     <parameter key="swiftmailer.single_address">null</parameter>
     <parameter key="swiftmailer.mailers" type="collection">
       <parameter key="default">swiftmailer.mailer.default</parameter>
@@ -382,6 +397,46 @@
     <service id="service_container" class="Symfony\Component\DependencyInjection\ContainerInterface" public="true" synthetic="true"/>
     <service id="EasyCorp\EasyLog\EasyLogHandler" class="EasyCorp\EasyLog\EasyLogHandler" public="false">
       <argument>D:\OSPanel\domains\sym2\var\log/dev.log</argument>
+    </service>
+    <service id="App\Blogger\BlogBundle\BloggerBlogBundle" class="App\Blogger\BlogBundle\BloggerBlogBundle" autowire="true" autoconfigure="true"/>
+    <service id="App\Blogger\BlogBundle\Controller\BlogController" class="App\Blogger\BlogBundle\Controller\BlogController" public="true" autowire="true" autoconfigure="true">
+      <tag name="controller.service_arguments"/>
+      <tag name="container.service_subscriber"/>
+      <call method="setContainer">
+        <argument type="service" id=".service_locator.CDOTD6..App\Blogger\BlogBundle\Controller\BlogController"/>
+      </call>
+    </service>
+    <service id="App\Blogger\BlogBundle\Controller\CommentController" class="App\Blogger\BlogBundle\Controller\CommentController" public="true" autowire="true" autoconfigure="true">
+      <tag name="controller.service_arguments"/>
+      <tag name="container.service_subscriber"/>
+      <call method="setContainer">
+        <argument type="service" id=".service_locator.CDOTD6..App\Blogger\BlogBundle\Controller\CommentController"/>
+      </call>
+    </service>
+    <service id="App\Blogger\BlogBundle\Controller\DefaultController" class="App\Blogger\BlogBundle\Controller\DefaultController" public="true" autowire="true" autoconfigure="true">
+      <tag name="controller.service_arguments"/>
+      <tag name="container.service_subscriber"/>
+      <call method="setContainer">
+        <argument type="service" id=".service_locator.CDOTD6..App\Blogger\BlogBundle\Controller\DefaultController"/>
+      </call>
+    </service>
+    <service id="App\Blogger\BlogBundle\Controller\PageController" class="App\Blogger\BlogBundle\Controller\PageController" public="true" autowire="true" autoconfigure="true">
+      <tag name="controller.service_arguments"/>
+      <tag name="container.service_subscriber"/>
+      <call method="setContainer">
+        <argument type="service" id=".service_locator.CDOTD6..App\Blogger\BlogBundle\Controller\PageController"/>
+      </call>
+    </service>
+    <service id="App\Blogger\BlogBundle\Entity\Blog" class="App\Blogger\BlogBundle\Entity\Blog" autowire="true" autoconfigure="true"/>
+    <service id="App\Blogger\BlogBundle\Entity\Comment" class="App\Blogger\BlogBundle\Entity\Comment" autowire="true" autoconfigure="true"/>
+    <service id="App\Blogger\BlogBundle\Entity\Enquiry" class="App\Blogger\BlogBundle\Entity\Enquiry" autowire="true" autoconfigure="true"/>
+    <service id="App\Blogger\BlogBundle\Entity\Repository\BlogRepository" class="App\Blogger\BlogBundle\Entity\Repository\BlogRepository" autowire="true" autoconfigure="true"/>
+    <service id="App\Blogger\BlogBundle\Entity\Repository\CommentRepository" class="App\Blogger\BlogBundle\Entity\Repository\CommentRepository" autowire="true" autoconfigure="true"/>
+    <service id="App\Blogger\BlogBundle\Form\CommentType" class="App\Blogger\BlogBundle\Form\CommentType" autowire="true" autoconfigure="true">
+      <tag name="form.type"/>
+    </service>
+    <service id="App\Blogger\BlogBundle\Form\EnquiryType" class="App\Blogger\BlogBundle\Form\EnquiryType" autowire="true" autoconfigure="true">
+      <tag name="form.type"/>
     </service>
     <service id="controller_name_converter" class="Symfony\Bundle\FrameworkBundle\Controller\ControllerNameParser" public="false">
       <tag name="monolog.logger" channel="request"/>
@@ -710,9 +765,12 @@
       <argument type="service" id="form.registry"/>
       <argument type="collection">
         <argument>Symfony\Component\Form\Extension\Core\Type</argument>
+        <argument>App\Blogger\BlogBundle\Form</argument>
         <argument>Symfony\Bridge\Doctrine\Form\Type</argument>
       </argument>
       <argument type="collection">
+        <argument>App\Blogger\BlogBundle\Form\CommentType</argument>
+        <argument>App\Blogger\BlogBundle\Form\EnquiryType</argument>
         <argument>Symfony\Component\Form\Extension\Core\Type\FormType</argument>
         <argument>Symfony\Component\Form\Extension\Core\Type\ChoiceType</argument>
         <argument>Symfony\Component\Form\Extension\Core\Type\FileType</argument>
@@ -978,7 +1036,7 @@
       <argument type="service" id="form.registry"/>
     </service>
     <service id="form.extension" class="Symfony\Component\Form\Extension\DependencyInjection\DependencyInjectionExtension" public="false">
-      <argument type="service" id=".service_locator.Fck5jT9"/>
+      <argument type="service" id=".service_locator.uBS_3TC"/>
       <argument type="collection">
         <argument key="Symfony\Component\Form\Extension\Core\Type\FormType" type="iterator">
           <argument type="service" id="form.type_extension.form.transformation_failure_handling"/>
@@ -1490,6 +1548,8 @@
           <argument>D:\OSPanel\domains\sym2\src/Resources/MakerBundle/translations</argument>
           <argument>D:\OSPanel\domains\sym2\vendor\symfony\web-server-bundle/Resources/translations</argument>
           <argument>D:\OSPanel\domains\sym2\src/Resources/WebServerBundle/translations</argument>
+          <argument>D:\OSPanel\domains\sym2\src\Blogger\BlogBundle/Resources/translations</argument>
+          <argument>D:\OSPanel\domains\sym2\src/Resources/BloggerBlogBundle/translations</argument>
           <argument>D:\OSPanel\domains\sym2\src/Resources/translations</argument>
         </argument>
       </argument>
@@ -2098,14 +2158,6 @@
       </call>
       <call method="addListener">
         <argument>kernel.request</argument>
-        <argument type="collection">
-          <argument type="service" id="debug.debug_handlers_listener"/>
-          <argument>configure</argument>
-        </argument>
-        <argument>2048</argument>
-      </call>
-      <call method="addListener">
-        <argument>console.command</argument>
         <argument type="collection">
           <argument type="service" id="debug.debug_handlers_listener"/>
           <argument>configure</argument>
@@ -3043,6 +3095,7 @@
       <call method="setEntityNamespaces">
         <argument type="collection">
           <argument key="App">App\Entity</argument>
+          <argument key="BloggerBlogBundle">App\Blogger\BlogBundle\Entity</argument>
         </argument>
       </call>
       <call method="setMetadataCacheImpl">
@@ -3089,12 +3142,17 @@
       <argument type="service" id="annotations.cached_reader"/>
       <argument type="collection">
         <argument>D:\OSPanel\domains\sym2\src\Entity</argument>
+        <argument>D:\OSPanel\domains\sym2\src\Blogger\BlogBundle\Entity</argument>
       </argument>
     </service>
     <service id="doctrine.orm.default_metadata_driver" class="Doctrine\Common\Persistence\Mapping\Driver\MappingDriverChain" public="false">
       <call method="addDriver">
         <argument type="service" id="doctrine.orm.default_annotation_metadata_driver"/>
         <argument>App\Entity</argument>
+      </call>
+      <call method="addDriver">
+        <argument type="service" id="doctrine.orm.default_annotation_metadata_driver"/>
+        <argument>App\Blogger\BlogBundle\Entity</argument>
       </call>
     </service>
     <service id="doctrine_cache.providers.doctrine.orm.default_metadata_cache" class="Doctrine\Common\Cache\ArrayCache" public="true">
@@ -3778,24 +3836,8 @@
       </call>
     </service>
     <service id="swiftmailer.mailer.default.transport.eventdispatcher" class="Swift_Events_SimpleEventDispatcher" public="false"/>
-    <service id="swiftmailer.mailer.default.transport.dynamic" class="Swift_Transport">
-      <argument type="collection">
-        <argument key="transport">smtp</argument>
-        <argument key="url">%env(MAILER_URL)%</argument>
-        <argument key="username">null</argument>
-        <argument key="password">null</argument>
-        <argument key="host">localhost</argument>
-        <argument key="port">null</argument>
-        <argument key="timeout">30</argument>
-        <argument key="source_ip">null</argument>
-        <argument key="local_domain">null</argument>
-        <argument key="encryption">null</argument>
-        <argument key="auth_mode">null</argument>
-        <argument key="command">/usr/sbin/sendmail -bs</argument>
-      </argument>
-      <argument type="service" id="router.request_context" on-invalid="null"/>
+    <service id="swiftmailer.mailer.default.transport.null" class="Swift_Transport_NullTransport" public="false">
       <argument type="service" id="swiftmailer.mailer.default.transport.eventdispatcher"/>
-      <factory class="Symfony\Bundle\SwiftmailerBundle\DependencyInjection\SwiftmailerTransportFactory" method="createTransport"/>
     </service>
     <service id="swiftmailer.mailer.default" class="Swift_Mailer" public="true">
       <argument type="service" id="swiftmailer.mailer.default.transport.spool"/>
@@ -3995,6 +4037,14 @@
       <call method="addPath">
         <argument>D:\OSPanel\domains\sym2\vendor\symfony\debug-bundle/Resources/views</argument>
         <argument>!Debug</argument>
+      </call>
+      <call method="addPath">
+        <argument>D:\OSPanel\domains\sym2\src\Blogger\BlogBundle/Resources/views</argument>
+        <argument>BloggerBlog</argument>
+      </call>
+      <call method="addPath">
+        <argument>D:\OSPanel\domains\sym2\src\Blogger\BlogBundle/Resources/views</argument>
+        <argument>!BloggerBlog</argument>
       </call>
       <call method="addPath">
         <argument>D:\OSPanel\domains\sym2/templates</argument>
@@ -4482,6 +4532,22 @@
         <argument>server:log</argument>
       </call>
     </service>
+    <service id=".instanceof.Symfony\Contracts\Service\ServiceSubscriberInterface.0.App\Blogger\BlogBundle\Controller\BlogController" class="App\Blogger\BlogBundle\Controller\BlogController" autowire="true" abstract="true"/>
+    <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\AbstractController.0.App\Blogger\BlogBundle\Controller\BlogController" class="App\Blogger\BlogBundle\Controller\BlogController" autowire="true" abstract="true"/>
+    <service id=".abstract.instanceof.App\Blogger\BlogBundle\Controller\BlogController" class="App\Blogger\BlogBundle\Controller\BlogController" autowire="true" autoconfigure="true" abstract="true"/>
+    <service id=".instanceof.Symfony\Contracts\Service\ServiceSubscriberInterface.0.App\Blogger\BlogBundle\Controller\CommentController" class="App\Blogger\BlogBundle\Controller\CommentController" autowire="true" abstract="true"/>
+    <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\AbstractController.0.App\Blogger\BlogBundle\Controller\CommentController" class="App\Blogger\BlogBundle\Controller\CommentController" autowire="true" abstract="true"/>
+    <service id=".abstract.instanceof.App\Blogger\BlogBundle\Controller\CommentController" class="App\Blogger\BlogBundle\Controller\CommentController" autowire="true" autoconfigure="true" abstract="true"/>
+    <service id=".instanceof.Symfony\Contracts\Service\ServiceSubscriberInterface.0.App\Blogger\BlogBundle\Controller\DefaultController" class="App\Blogger\BlogBundle\Controller\DefaultController" autowire="true" abstract="true"/>
+    <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\AbstractController.0.App\Blogger\BlogBundle\Controller\DefaultController" class="App\Blogger\BlogBundle\Controller\DefaultController" autowire="true" abstract="true"/>
+    <service id=".abstract.instanceof.App\Blogger\BlogBundle\Controller\DefaultController" class="App\Blogger\BlogBundle\Controller\DefaultController" autowire="true" autoconfigure="true" abstract="true"/>
+    <service id=".instanceof.Symfony\Contracts\Service\ServiceSubscriberInterface.0.App\Blogger\BlogBundle\Controller\PageController" class="App\Blogger\BlogBundle\Controller\PageController" autowire="true" abstract="true"/>
+    <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\AbstractController.0.App\Blogger\BlogBundle\Controller\PageController" class="App\Blogger\BlogBundle\Controller\PageController" autowire="true" abstract="true"/>
+    <service id=".abstract.instanceof.App\Blogger\BlogBundle\Controller\PageController" class="App\Blogger\BlogBundle\Controller\PageController" autowire="true" autoconfigure="true" abstract="true"/>
+    <service id=".instanceof.Symfony\Component\Form\FormTypeInterface.0.App\Blogger\BlogBundle\Form\CommentType" class="App\Blogger\BlogBundle\Form\CommentType" autowire="true" abstract="true"/>
+    <service id=".abstract.instanceof.App\Blogger\BlogBundle\Form\CommentType" class="App\Blogger\BlogBundle\Form\CommentType" autowire="true" autoconfigure="true" abstract="true"/>
+    <service id=".instanceof.Symfony\Component\Form\FormTypeInterface.0.App\Blogger\BlogBundle\Form\EnquiryType" class="App\Blogger\BlogBundle\Form\EnquiryType" autowire="true" abstract="true"/>
+    <service id=".abstract.instanceof.App\Blogger\BlogBundle\Form\EnquiryType" class="App\Blogger\BlogBundle\Form\EnquiryType" autowire="true" autoconfigure="true" abstract="true"/>
     <service id="maker.auto_command.make_auth" class="Symfony\Bundle\MakerBundle\Command\MakerCommand" public="false">
       <tag name="console.command" command="make:auth"/>
       <argument type="service" id="maker.maker.make_authenticator"/>
@@ -4644,9 +4710,18 @@
         <argument>make:migration</argument>
       </call>
     </service>
-    <service id=".service_locator.9_yeNH1" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
+    <service id=".service_locator.Z_.o95M" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
       <tag name="container.service_locator"/>
-      <argument type="collection"/>
+      <argument type="collection">
+        <argument key="mailer" type="service" id="swiftmailer.mailer.default"/>
+      </argument>
+    </service>
+    <service id=".service_locator.ZfNL7LX" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
+      <tag name="container.service_locator"/>
+      <argument type="collection">
+        <argument key="App\Blogger\BlogBundle\Controller\PageController::contactAction" type="service" id=".service_locator.Z_.o95M"/>
+        <argument key="App\Blogger\BlogBundle\Controller\PageController:contactAction" type="service" id=".service_locator.Z_.o95M"/>
+      </argument>
     </service>
     <service id=".service_locator.LtnrEkg" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
       <tag name="container.service_locator"/>
@@ -4707,9 +4782,11 @@
       <argument type="service" id="debug.argument_resolver.not_tagged_controller.inner"/>
       <argument type="service" id="debug.stopwatch"/>
     </service>
-    <service id=".service_locator.Fck5jT9" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
+    <service id=".service_locator.uBS_3TC" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
       <tag name="container.service_locator"/>
       <argument type="collection">
+        <argument key="App\Blogger\BlogBundle\Form\CommentType" type="service" id="App\Blogger\BlogBundle\Form\CommentType"/>
+        <argument key="App\Blogger\BlogBundle\Form\EnquiryType" type="service" id="App\Blogger\BlogBundle\Form\EnquiryType"/>
         <argument key="Symfony\Bridge\Doctrine\Form\Type\EntityType" type="service" id="form.type.entity"/>
         <argument key="Symfony\Component\Form\Extension\Core\Type\ChoiceType" type="service" id="form.type.choice"/>
         <argument key="Symfony\Component\Form\Extension\Core\Type\FileType" type="service" id="form.type.file"/>
@@ -4721,6 +4798,10 @@
       <argument type="collection">
         <argument key="doctrine.orm.default_listeners.attach_entity_listeners" type="service" id="doctrine.orm.default_listeners.attach_entity_listeners"/>
       </argument>
+    </service>
+    <service id=".service_locator.9_yeNH1" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
+      <tag name="container.service_locator"/>
+      <argument type="collection"/>
     </service>
     <service id="debug.security.voter.security.access.authenticated_voter" class="Symfony\Component\Security\Core\Authorization\Voter\TraceableVoter">
       <argument type="service" id="security.access.authenticated_voter"/>
@@ -4923,6 +5004,47 @@
         <argument key="security.token_storage" type="service" id="security.token_storage"/>
       </argument>
     </service>
+    <service id=".service_locator.CDOTD6." class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
+      <tag name="container.service_locator"/>
+      <argument type="collection">
+        <argument key="doctrine" type="service" id="doctrine" on-invalid="ignore"/>
+        <argument key="form.factory" type="service" id="form.factory" on-invalid="ignore"/>
+        <argument key="http_kernel" type="service" id="http_kernel" on-invalid="ignore"/>
+        <argument key="parameter_bag" type="service" id="parameter_bag" on-invalid="ignore"/>
+        <argument key="request_stack" type="service" id="request_stack" on-invalid="ignore"/>
+        <argument key="router" type="service" id="router.default" on-invalid="ignore"/>
+        <argument key="security.authorization_checker" type="service" id="security.authorization_checker" on-invalid="ignore"/>
+        <argument key="security.csrf.token_manager" type="service" id="security.csrf.token_manager" on-invalid="ignore"/>
+        <argument key="security.token_storage" type="service" id="security.token_storage" on-invalid="ignore"/>
+        <argument key="serializer" type="service" id="serializer" on-invalid="ignore"/>
+        <argument key="session" type="service" id="session" on-invalid="ignore"/>
+        <argument key="twig" type="service" id="twig" on-invalid="ignore"/>
+      </argument>
+    </service>
+    <service id=".service_locator.CDOTD6..App\Blogger\BlogBundle\Controller\BlogController" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
+      <tag name="container.service_locator_context" id="App\Blogger\BlogBundle\Controller\BlogController"/>
+      <argument>App\Blogger\BlogBundle\Controller\BlogController</argument>
+      <argument type="service" id="service_container"/>
+      <factory service=".service_locator.CDOTD6." method="withContext"/>
+    </service>
+    <service id=".service_locator.CDOTD6..App\Blogger\BlogBundle\Controller\CommentController" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
+      <tag name="container.service_locator_context" id="App\Blogger\BlogBundle\Controller\CommentController"/>
+      <argument>App\Blogger\BlogBundle\Controller\CommentController</argument>
+      <argument type="service" id="service_container"/>
+      <factory service=".service_locator.CDOTD6." method="withContext"/>
+    </service>
+    <service id=".service_locator.CDOTD6..App\Blogger\BlogBundle\Controller\DefaultController" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
+      <tag name="container.service_locator_context" id="App\Blogger\BlogBundle\Controller\DefaultController"/>
+      <argument>App\Blogger\BlogBundle\Controller\DefaultController</argument>
+      <argument type="service" id="service_container"/>
+      <factory service=".service_locator.CDOTD6." method="withContext"/>
+    </service>
+    <service id=".service_locator.CDOTD6..App\Blogger\BlogBundle\Controller\PageController" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
+      <tag name="container.service_locator_context" id="App\Blogger\BlogBundle\Controller\PageController"/>
+      <argument>App\Blogger\BlogBundle\Controller\PageController</argument>
+      <argument type="service" id="service_container"/>
+      <factory service=".service_locator.CDOTD6." method="withContext"/>
+    </service>
     <service id=".service_locator._pu.0Tb" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
       <tag name="container.service_locator"/>
       <argument type="collection">
@@ -5016,12 +5138,12 @@
       <argument type="service" id="security.token_storage"/>
     </service>
     <service id="debug.argument_resolver.service.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\ServiceValueResolver" public="false">
-      <argument type="service" id=".service_locator.9_yeNH1"/>
+      <argument type="service" id=".service_locator.ZfNL7LX"/>
     </service>
     <service id="debug.argument_resolver.default.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\DefaultValueResolver" public="false"/>
     <service id="debug.argument_resolver.variadic.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\VariadicValueResolver" public="false"/>
     <service id="debug.argument_resolver.not_tagged_controller.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\NotTaggedControllerValueResolver" public="false">
-      <argument type="service" id=".service_locator.9_yeNH1"/>
+      <argument type="service" id=".service_locator.ZfNL7LX"/>
     </service>
     <service id="console.command_loader" class="Symfony\Component\Console\CommandLoader\ContainerCommandLoader" public="true">
       <argument type="service" id=".service_locator.UvMMnf."/>
@@ -5359,9 +5481,9 @@
     <service id="Symfony\Component\Security\Core\User\UserCheckerInterface" alias="security.user_checker" public="false"/>
     <service id="swiftmailer.mailer.default.transport" alias="swiftmailer.mailer.default.transport.spool"/>
     <service id="swiftmailer.mailer.default.spool" alias="swiftmailer.mailer.default.spool.memory"/>
-    <service id="swiftmailer.mailer.default.transport.real" alias="swiftmailer.mailer.default.transport.dynamic" public="true"/>
+    <service id="swiftmailer.mailer.default.transport.real" alias="swiftmailer.mailer.default.transport.null" public="true"/>
     <service id="swiftmailer.spool" alias="swiftmailer.mailer.default.spool.memory"/>
-    <service id="swiftmailer.transport.real" alias="swiftmailer.mailer.default.transport.dynamic"/>
+    <service id="swiftmailer.transport.real" alias="swiftmailer.mailer.default.transport.null"/>
     <service id="Swift_Spool" alias="swiftmailer.mailer.default.spool.memory" public="false"/>
     <service id="swiftmailer.plugin.messagelogger" alias="swiftmailer.mailer.default.plugin.messagelogger"/>
     <service id="swiftmailer.mailer" alias="swiftmailer.mailer.default"/>
@@ -5373,7 +5495,7 @@
     <service id="Twig\Environment" alias="twig" public="false"/>
     <service id="logger" alias="monolog.logger"/>
     <service id="Psr\Log\LoggerInterface" alias="monolog.logger" public="false"/>
-    <service id="argument_resolver.controller_locator" alias=".service_locator.9_yeNH1"/>
+    <service id="argument_resolver.controller_locator" alias=".service_locator.ZfNL7LX"/>
     <service id="twig.loader.filesystem" alias="twig.loader.native_filesystem" public="false"/>
     <service id="twig.loader" alias="twig.loader.native_filesystem"/>
     <service id="validator" alias="debug.validator" public="true"/>

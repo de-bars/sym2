@@ -141,7 +141,7 @@ class DisconnectedMetadataFactory
         $destination = str_replace('/' . $namespace, '', $search, $c);
 
         if ($c !== 1) {
-            throw new RuntimeException(sprintf('Can\'t find base path for "%s" (path: "%s", destination: "%s").', $name, $path, $destination));
+            //throw new RuntimeException(sprintf('Can\'t find base path for "%s" [%s] (path: "%s", destination: "%s").', $name, $namespace, $path, $destination));
         }
 
         return $destination;

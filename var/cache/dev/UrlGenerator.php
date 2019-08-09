@@ -15,4 +15,9 @@ return [
     '_profiler_router' => [['token'], ['_controller' => 'web_profiler.controller.router::panelAction'], [], [['text', '/router'], ['variable', '/', '[^/]++', 'token', true], ['text', '/_profiler']], [], []],
     '_profiler_exception' => [['token'], ['_controller' => 'web_profiler.controller.exception::showAction'], [], [['text', '/exception'], ['variable', '/', '[^/]++', 'token', true], ['text', '/_profiler']], [], []],
     '_profiler_exception_css' => [['token'], ['_controller' => 'web_profiler.controller.exception::cssAction'], [], [['text', '/exception.css'], ['variable', '/', '[^/]++', 'token', true], ['text', '/_profiler']], [], []],
+    'BloggerBlogBundle_homepage' => [[], ['_controller' => 'App\\Blogger\\BlogBundle\\Controller\\PageController::indexAction'], ['methods' => 'GET'], [['text', '/']], [], []],
+    'BloggerBlogBundle_about' => [[], ['_controller' => 'App\\Blogger\\BlogBundle\\Controller\\PageController::aboutAction'], ['methods' => 'GET'], [['text', '/about']], [], []],
+    'BloggerBlogBundle_contact' => [[], ['_controller' => 'App\\Blogger\\BlogBundle\\Controller\\PageController::contactAction'], ['methods' => 'GET|POST'], [['text', '/contact']], [], []],
+    'BloggerBlogBundle_blog_show' => [['id'], ['_controller' => 'App\\Blogger\\BlogBundle\\Controller\\BlogController::showAction'], ['methods' => 'GET', 'id' => '\\d+'], [['variable', '/', '\\d+', 'id', true]], [], []],
+    'BloggerBlogBundle_comment_create' => [['blog_id'], ['_controller' => 'App\\Blogger\\BlogBundle\\Controller\\CommentController::createAction'], ['methods' => 'POST', 'blog_id' => '\\d+'], [['variable', '/', '\\d+', 'blog_id', true], ['text', '/comment']], [], []],
 ];
