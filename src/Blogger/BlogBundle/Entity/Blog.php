@@ -51,6 +51,11 @@ class Blog
 	protected $comments;
 
 	/**
+	 *
+	 */
+	protected $commentsCount;
+
+	/**
 	 * @ORM\Column(type="datetime")
 	 */
 	protected $created;
@@ -293,6 +298,30 @@ class Blog
 	public function getComments()
 	{
 		return $this->comments;
+	}
+
+	/**
+	 * Set comments count
+	 *
+	 * @param integer $commentsCount
+	 *
+	 * @return Blog
+	 */
+	public function setCommentsCount($count)
+	{
+		$this->commentsCount = $count;
+
+		return $this;
+	}
+
+	/**
+	 * Get comments count
+	 *
+	 * @return integer
+	 */
+	public function getCommentsCount()
+	{
+		return $this->commentsCount;
 	}
 
 	/**

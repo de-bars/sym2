@@ -14,8 +14,9 @@ class PageController extends AbstractController
 		$em = $this->getDoctrine()
 			->getManager();
 
-		$blogs = $em->getRepository('BloggerBlogBundle:Blog')
-			->getLatestBlogs();
+		/** @var \App\Blogger\BlogBundle\Entity\Repository\BlogRepository $BlogRepository */
+		$BlogRepository = $em->getRepository('BloggerBlogBundle:Blog');
+		$blogs = $BlogRepository->getLatestBlogs(5);
 
 		return $this->render('@BloggerBlog/Page/index.html.twig', array(
 			'blogs' => $blogs
@@ -61,15 +62,16 @@ class PageController extends AbstractController
 		$em = $this->getDoctrine()
 			->getManager();
 
-		$tags = $em->getRepository('BloggerBlogBundle:Blog')
-			->getTags();
+		/** @var \App\Blogger\BlogBundle\Entity\Repository\BlogRepository $BlogRepository */
+		$BlogRepository = $em->getRepository('BloggerBlogBundle:Blog');
+		/** @var \App\Blogger\BlogBundle\Entity\Repository\CommentRepository $CommentRepository */
+		$CommentRepository = $em->getRepository('BloggerBlogBundle:Comment');
 
-		$tagWeights = $em->getRepository('BloggerBlogBundle:Blog')
-			->getTagWeights($tags);
+		$tags = $BlogRepository->getTags();
+		$tagWeights = $BlogRepository->getTagWeights($tags);
 
 		$commentLimit   = $this->getParameter('blogger_blog.comments.latest_comment_limit');
-		$latestComments = $em->getRepository('BloggerBlogBundle:Comment')
-			->getLatestComments($commentLimit);
+		$latestComments = $CommentRepository->getLatestComments($commentLimit);
 
 		return $this->render('@BloggerBlog/Page/sidebar.html.twig', array(
 			'latestComments'    => $latestComments,

@@ -3,6 +3,7 @@
 
 namespace App\Blogger\BlogBundle\Entity;
 
+use Doctrine\ORM\Event\LifecycleEventArgs;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Validator\Mapping\ClassMetadata;
 use Symfony\Component\Validator\Constraints\NotBlank;
@@ -37,6 +38,11 @@ class Comment
 	protected $approved;
 
 	/**
+	 * @ORM\Column(type="integer")
+	 */
+	protected $blog_id;
+
+	/**
 	 * @ORM\ManyToOne(targetEntity="Blog", inversedBy="comments")
 	 * @ORM\JoinColumn(name="blog_id", referencedColumnName="id")
 	 */
@@ -51,6 +57,9 @@ class Comment
 	 * @ORM\Column(type="datetime")
 	 */
 	protected $updated;
+
+	/** @var EntityManager */
+	protected $em;
 
 	public function __construct()
 	{
@@ -205,6 +214,31 @@ class Comment
 	{
 		return $this->updated;
 	}
+	#>mine#
+	/**
+	 * Set blog_id
+	 *
+	 * @param integer $blog_id
+	 *
+	 * @return Comment
+	 */
+	public function setBlogId($blog_id)
+	{
+		$this->blog_id = $blog_id;
+
+		return $this;
+	}
+
+	/**
+	 * Get blog_id
+	 *
+	 * @return integer
+	 */
+	public function getBlogId()
+	{
+		return $this->blog_id;
+	}
+	#<mine#
 
 	/**
 	 * Set blog.
@@ -227,6 +261,23 @@ class Comment
 	 */
 	public function getBlog()
 	{
+		#>mine#
+		if($this->em && !empty($this->blog_id)) {
+			return $this->em->getRepository('BloggerBlogBundle:Blog')->find($this->blog_id);
+		}
+		#<mine#
 		return $this->blog;
 	}
+	#>mine#
+	/**
+	 * @ORM\PostLoad
+	 * @ORM\PostPersist
+	 */
+	public function fetchEntityManager(LifecycleEventArgs $args)
+	{
+		if(is_null($this->em)) {
+			$this->em = $args->getEntityManager();
+		}
+	}
+	#<mine#
 }

@@ -23,8 +23,9 @@ class BlogController extends AbstractController
 			throw $this->createNotFoundException('Unable to find Blog post.');
 		}
 
-		$comments = $em->getRepository('BloggerBlogBundle:Comment')
-			->getCommentsForBlog($blog->getId());
+		/** @var \App\Blogger\BlogBundle\Entity\Repository\CommentRepository $CommentRepository */
+		$CommentRepository = $em->getRepository('BloggerBlogBundle:Comment');
+		$comments = $CommentRepository->getCommentsForBlog($blog->getId());
 
 		return $this->render('@BloggerBlog/Blog/show.html.twig', array(
 			'blog'      => $blog,

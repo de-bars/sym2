@@ -439,6 +439,7 @@
     <service id="App\Blogger\BlogBundle\Form\EnquiryType" class="App\Blogger\BlogBundle\Form\EnquiryType" autowire="true" autoconfigure="true">
       <tag name="form.type"/>
     </service>
+    <service id="App\Repository\LazyEntityRepository" class="App\Repository\LazyEntityRepository" autowire="true" autoconfigure="true"/>
     <service id="App\Twig\Extensions\AppExtension" class="App\Twig\Extensions\AppExtension" autowire="true" autoconfigure="true">
       <tag name="twig.extension"/>
     </service>
