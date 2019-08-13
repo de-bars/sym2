@@ -49,7 +49,7 @@ class Processor
      */
     public function processConfiguration(ConfigurationInterface $configuration, array $configs)
     {
-        return $this->process($configuration->getConfigTreeBuilder()->buildTree(), $configs);
+    	return $this->process($configuration->getConfigTreeBuilder()->buildTree(), $configs);
     }
 
     /**

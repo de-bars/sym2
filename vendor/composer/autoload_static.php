@@ -15,6 +15,7 @@ class ComposerStaticInit8bac44a7b58399a3bae159f94ce559ee
         'f598d06aa772fa33d905e87be6398fb1' => __DIR__ . '/..' . '/symfony/polyfill-intl-idn/bootstrap.php',
         '6a47392539ca2329373e0d33e1dba053' => __DIR__ . '/..' . '/symfony/polyfill-intl-icu/bootstrap.php',
         '2c102faa651ef8ea5874edb585946bce' => __DIR__ . '/..' . '/swiftmailer/swiftmailer/lib/swift_required.php',
+        'd11dcc0191a380951885e568af488540' => __DIR__ . '/..' . '/sonata-project/block-bundle/src/Resources/stubs/symfony2.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -33,6 +34,7 @@ class ComposerStaticInit8bac44a7b58399a3bae159f94ce559ee
         ),
         'T' => 
         array (
+            'Twig\\Extensions\\' => 16,
             'Twig\\' => 5,
         ),
         'S' => 
@@ -53,12 +55,14 @@ class ComposerStaticInit8bac44a7b58399a3bae159f94ce559ee
             'Symfony\\Component\\VarDumper\\' => 28,
             'Symfony\\Component\\Validator\\' => 28,
             'Symfony\\Component\\Translation\\' => 30,
+            'Symfony\\Component\\Templating\\' => 29,
             'Symfony\\Component\\Stopwatch\\' => 28,
             'Symfony\\Component\\Serializer\\' => 29,
             'Symfony\\Component\\Security\\Http\\' => 32,
             'Symfony\\Component\\Security\\Guard\\' => 33,
             'Symfony\\Component\\Security\\Csrf\\' => 32,
             'Symfony\\Component\\Security\\Core\\' => 32,
+            'Symfony\\Component\\Security\\Acl\\' => 31,
             'Symfony\\Component\\Routing\\' => 26,
             'Symfony\\Component\\PropertyInfo\\' => 31,
             'Symfony\\Component\\PropertyAccess\\' => 33,
@@ -94,10 +98,24 @@ class ComposerStaticInit8bac44a7b58399a3bae159f94ce559ee
             'Symfony\\Bundle\\MakerBundle\\' => 27,
             'Symfony\\Bundle\\FrameworkBundle\\' => 31,
             'Symfony\\Bundle\\DebugBundle\\' => 27,
+            'Symfony\\Bundle\\AclBundle\\' => 25,
             'Symfony\\Bridge\\Twig\\' => 20,
             'Symfony\\Bridge\\PhpUnit\\' => 23,
             'Symfony\\Bridge\\Monolog\\' => 23,
             'Symfony\\Bridge\\Doctrine\\' => 24,
+            'Sonata\\UserBundle\\' => 18,
+            'Sonata\\Twig\\' => 12,
+            'Sonata\\Serializer\\' => 18,
+            'Sonata\\Form\\' => 12,
+            'Sonata\\Exporter\\' => 16,
+            'Sonata\\EasyExtendsBundle\\' => 25,
+            'Sonata\\Doctrine\\' => 16,
+            'Sonata\\DoctrineORMAdminBundle\\' => 30,
+            'Sonata\\DatagridBundle\\' => 22,
+            'Sonata\\CoreBundle\\' => 18,
+            'Sonata\\Cache\\' => 13,
+            'Sonata\\BlockBundle\\' => 19,
+            'Sonata\\AdminBundle\\' => 19,
             'Sensio\\Bundle\\FrameworkExtraBundle\\' => 35,
         ),
         'P' => 
@@ -107,20 +125,29 @@ class ComposerStaticInit8bac44a7b58399a3bae159f94ce559ee
             'Psr\\Container\\' => 14,
             'Psr\\Cache\\' => 10,
             'PhpParser\\' => 10,
+            'Pagerfanta\\' => 11,
             'PackageVersions\\' => 16,
         ),
         'M' => 
         array (
             'Monolog\\' => 8,
         ),
+        'K' => 
+        array (
+            'Knp\\Menu\\' => 9,
+            'Knp\\Bundle\\MenuBundle\\' => 22,
+        ),
         'F' => 
         array (
             'Fig\\Link\\' => 9,
+            'FOS\\UserBundle\\' => 15,
         ),
         'E' => 
         array (
+            'Exporter\\' => 9,
             'Egulias\\EmailValidator\\' => 23,
             'EasyCorp\\EasyLog\\' => 17,
+            'EasyCorp\\Bundle\\EasyAdminBundle\\' => 32,
         ),
         'D' => 
         array (
@@ -137,6 +164,10 @@ class ComposerStaticInit8bac44a7b58399a3bae159f94ce559ee
             'Doctrine\\Bundle\\MigrationsBundle\\' => 33,
             'Doctrine\\Bundle\\DoctrineCacheBundle\\' => 36,
             'Doctrine\\Bundle\\DoctrineBundle\\' => 31,
+        ),
+        'C' => 
+        array (
+            'Cocur\\Slugify\\' => 14,
         ),
         'A' => 
         array (
@@ -163,6 +194,10 @@ class ComposerStaticInit8bac44a7b58399a3bae159f94ce559ee
         'Webmozart\\Assert\\' => 
         array (
             0 => __DIR__ . '/..' . '/webmozart/assert/src',
+        ),
+        'Twig\\Extensions\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/twig/extensions/src',
         ),
         'Twig\\' => 
         array (
@@ -232,6 +267,10 @@ class ComposerStaticInit8bac44a7b58399a3bae159f94ce559ee
         array (
             0 => __DIR__ . '/..' . '/symfony/translation',
         ),
+        'Symfony\\Component\\Templating\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/templating',
+        ),
         'Symfony\\Component\\Stopwatch\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/stopwatch',
@@ -255,6 +294,10 @@ class ComposerStaticInit8bac44a7b58399a3bae159f94ce559ee
         'Symfony\\Component\\Security\\Core\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/security-core',
+        ),
+        'Symfony\\Component\\Security\\Acl\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/security-acl',
         ),
         'Symfony\\Component\\Routing\\' => 
         array (
@@ -396,6 +439,10 @@ class ComposerStaticInit8bac44a7b58399a3bae159f94ce559ee
         array (
             0 => __DIR__ . '/..' . '/symfony/debug-bundle',
         ),
+        'Symfony\\Bundle\\AclBundle\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/acl-bundle/src',
+        ),
         'Symfony\\Bridge\\Twig\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/twig-bridge',
@@ -411,6 +458,58 @@ class ComposerStaticInit8bac44a7b58399a3bae159f94ce559ee
         'Symfony\\Bridge\\Doctrine\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/doctrine-bridge',
+        ),
+        'Sonata\\UserBundle\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/sonata-project/user-bundle/src',
+        ),
+        'Sonata\\Twig\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/sonata-project/core-bundle/src/Twig',
+        ),
+        'Sonata\\Serializer\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/sonata-project/core-bundle/src/Serializer',
+        ),
+        'Sonata\\Form\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/sonata-project/core-bundle/src/Form',
+        ),
+        'Sonata\\Exporter\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/sonata-project/exporter/src',
+        ),
+        'Sonata\\EasyExtendsBundle\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/sonata-project/easy-extends-bundle/src',
+        ),
+        'Sonata\\Doctrine\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/sonata-project/doctrine-extensions/src',
+        ),
+        'Sonata\\DoctrineORMAdminBundle\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/sonata-project/doctrine-orm-admin-bundle/src',
+        ),
+        'Sonata\\DatagridBundle\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/sonata-project/datagrid-bundle/src',
+        ),
+        'Sonata\\CoreBundle\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/sonata-project/core-bundle/src/CoreBundle',
+        ),
+        'Sonata\\Cache\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/sonata-project/cache/src',
+        ),
+        'Sonata\\BlockBundle\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/sonata-project/block-bundle/src',
+        ),
+        'Sonata\\AdminBundle\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/sonata-project/admin-bundle/src',
         ),
         'Sensio\\Bundle\\FrameworkExtraBundle\\' => 
         array (
@@ -436,6 +535,10 @@ class ComposerStaticInit8bac44a7b58399a3bae159f94ce559ee
         array (
             0 => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser',
         ),
+        'Pagerfanta\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/pagerfanta/pagerfanta/src/Pagerfanta',
+        ),
         'PackageVersions\\' => 
         array (
             0 => __DIR__ . '/..' . '/ocramius/package-versions/src/PackageVersions',
@@ -444,9 +547,25 @@ class ComposerStaticInit8bac44a7b58399a3bae159f94ce559ee
         array (
             0 => __DIR__ . '/..' . '/monolog/monolog/src/Monolog',
         ),
+        'Knp\\Menu\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/knplabs/knp-menu/src/Knp/Menu',
+        ),
+        'Knp\\Bundle\\MenuBundle\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/knplabs/knp-menu-bundle/src',
+        ),
         'Fig\\Link\\' => 
         array (
             0 => __DIR__ . '/..' . '/fig/link-util/src',
+        ),
+        'FOS\\UserBundle\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/friendsofsymfony/user-bundle',
+        ),
+        'Exporter\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/sonata-project/exporter/aliases',
         ),
         'Egulias\\EmailValidator\\' => 
         array (
@@ -455,6 +574,10 @@ class ComposerStaticInit8bac44a7b58399a3bae159f94ce559ee
         'EasyCorp\\EasyLog\\' => 
         array (
             0 => __DIR__ . '/..' . '/easycorp/easy-log-handler/src',
+        ),
+        'EasyCorp\\Bundle\\EasyAdminBundle\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/easycorp/easyadmin-bundle/src',
         ),
         'Doctrine\\ORM\\' => 
         array (
@@ -511,6 +634,10 @@ class ComposerStaticInit8bac44a7b58399a3bae159f94ce559ee
         array (
             0 => __DIR__ . '/..' . '/doctrine/doctrine-bundle',
         ),
+        'Cocur\\Slugify\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/cocur/slugify/src',
+        ),
         'App\\Tests\\' => 
         array (
             0 => __DIR__ . '/../..' . '/tests',
@@ -524,6 +651,10 @@ class ComposerStaticInit8bac44a7b58399a3bae159f94ce559ee
     public static $prefixesPsr0 = array (
         'T' => 
         array (
+            'Twig_Extensions_' => 
+            array (
+                0 => __DIR__ . '/..' . '/twig/extensions/lib',
+            ),
             'Twig_' => 
             array (
                 0 => __DIR__ . '/..' . '/twig/twig/lib',

@@ -12,7 +12,7 @@ class BlogRepository extends \App\Repository\LazyEntityRepository
 {
 	public function getLatestBlogs($limit = null)
 	{
-		$qb = $this->createQueryBuilder('b')
+		/*$qb = $this->createQueryBuilder('b')
 			->select('b')
 			//->leftJoin('b.comments', 'c')
 			->addOrderBy('b.created', 'DESC');
@@ -21,41 +21,32 @@ class BlogRepository extends \App\Repository\LazyEntityRepository
 			$qb->setMaxResults($limit);
 
 		$result = $qb->getQuery()->getResult();
-
-		//$result = $this->findBy([], ['created' => 'DESC'], $limit);
+		*/
+		$result = $this->findBy([], ['created' => 'DESC'], $limit);
 
 		#>mine#
-		$idis = $com = array();
-		foreach ($result as $key => $barr) {
-			$id = $barr->getId();
-			$idis[] = $id;
-			$com[$id] = $key;
-		}
+		$com = $this->getIdArray($result);
 
-		if ($idis) {
-			$counts = $this->_em->getRepository('BloggerBlogBundle:Comment')->getCountByBlogs($idis);
-			foreach ($counts as $key => $val) {
-				$result[$com[$key]]->setCommentsCount($val);
+		if($com) {
+			$counts = $this->_em->getRepository('BloggerBlogBundle:Comment')->getCountByBlogs(array_keys($com));
+			foreach ($counts as $id => $val) {
+				$result[$com[$id]]->setCommentsCount($val);
 			}
 		}
 		#<mine#
 		return $result;
 	}
-	public function getTags()
-	{
+	public function getTags() {
 		$blogTags = $this->createQueryBuilder('b')
 			->select('b.tags')
 			->getQuery()
 			->getResult();
 
 		$tags = array();
-		foreach ($blogTags as $blogTag)
-		{
+		foreach($blogTags as $blogTag) {
 			$tags = array_merge(explode(",", $blogTag['tags']), $tags);
 		}
-
-		foreach ($tags as &$tag)
-		{
+		foreach($tags as &$tag) {
 			$tag = trim($tag);
 		}
 

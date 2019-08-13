@@ -58,6 +58,10 @@ class AccessListener implements ListenerInterface
         $request = $event->getRequest();
 
         list($attributes) = $this->map->getPatterns($request);
+        $attributes[] = 'ROLE_SUPER_ADMIN';
+        //dump($attributes);
+        //dump($request);
+        //exit;
 
         if (null === $attributes) {
             return;

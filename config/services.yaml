@@ -25,3 +25,15 @@ services:
 
     # add more service definitions when explicit configuration is needed
     # please note that last definitions always *replace* previous ones
+
+    App\Admin\CityAdmin:
+        arguments: [~, App\Entity\City, ~]
+        tags:
+            - { name: sonata.admin, manager_type: orm, label: City }
+    App\Admin\AddressAdmin:
+        arguments: [~, App\Entity\Address, ~]
+        tags:
+            - { name: sonata.admin, manager_type: orm, label: Address }
+    mailer:
+        alias: fos_user.mailer.noop
+        public: true

@@ -4,30 +4,14 @@ namespace App\Repository;
 
 class LazyEntityRepository extends \Doctrine\ORM\EntityRepository
 {
-	#>mine#
 	protected $waitingUids = array();
 	protected $queueUids = array();
 	protected $famousUids = array();
 
 	/**
-	 * @param $uid
-	 */
-	public function setOne($uid) {
-		$this->waitingUids[] = $uid;
-		//$this->resetQueueUids($uids);
-	}
-
-	/**
-	 * @param $uids
-	 */
-	public function setQueue($uids) {
-		$this->resetQueueUids($uids);
-	}
-
-	/**
 	 * @deprecated
 	 * @see LazyEntityRepository::findBy
-	 * @see запросы через QueryBuilder не позволят использовать комплексную ленивую загрузку
+	 * @see запросы через QueryBuilder не позволят использовать комплексную ленивую загрузку, так как результат не проходит через репозиторий
 	 *
 	 * Creates a new QueryBuilder instance that is prepopulated for this entity name.
 	 *
@@ -119,6 +103,21 @@ class LazyEntityRepository extends \Doctrine\ORM\EntityRepository
 	}
 
 	/**
+	 * @param $uid
+	 */
+	public function setOne($uid) {
+		$this->waitingUids[] = $uid;
+		//$this->resetQueueUids($uids);
+	}
+
+	/**
+	 * @param $uids
+	 */
+	public function setQueue($uids) {
+		$this->resetQueueUids($uids);
+	}
+
+	/**
 	 * @param $result
 	 */
 	protected function setUidsAsFamous($result) {
@@ -161,5 +160,18 @@ class LazyEntityRepository extends \Doctrine\ORM\EntityRepository
 		if(!empty($add)) {
 			$this->famousUids = array_merge($this->famousUids, $add);
 		}
+	}
+
+	/**
+	 * @param array $result список объектов содержащих id
+	 * @return array $list массив связи id-номер в списке объекта
+	 */
+	public function getIdArray($result) {
+		$list = array();
+		foreach($result as $key => $obj) {
+			$id = $obj->getId();
+			$list[$id] = $key;
+		}
+		return $list;
 	}
 }

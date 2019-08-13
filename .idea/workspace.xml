@@ -1,0 +1,1306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b0a28eb5-1760-40e2-9048-57fed323e466" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/config/packages/acl.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/packages/fos_user.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/packages/sonata_user.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sym2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sym2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/doctrine.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/doctrine.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/framework.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/framework.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/routes.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Blogger/BlogBundle/Entity/Repository/BlogRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Blogger/BlogBundle/Entity/Repository/BlogRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/LazyEntityRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/LazyEntityRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/UrlGenerator.php" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/UrlGenerator.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/UrlGenerator.php.meta" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/UrlGenerator.php.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/UrlMatcher.php" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/UrlMatcher.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/UrlMatcher.php.meta" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/UrlMatcher.php.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/annotations.php" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/annotations.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/+/C/aKTWdAZRqIYb+-O0tG2g" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/+/C/aKTWdAZRqIYb+-O0tG2g" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/+/R/0Oof8ybB2zIl+tEzwhhg" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/+/R/0Oof8ybB2zIl+tEzwhhg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/+/U/Cd+PCJDxH3rCrnCz5v3g" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/+/U/Cd+PCJDxH3rCrnCz5v3g" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/0/H/5YvBFjjcghEve4kMcVWQ" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/0/H/5YvBFjjcghEve4kMcVWQ" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/0/H/J-Nco+JcaW71Ozk5SH5w" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/0/H/J-Nco+JcaW71Ozk5SH5w" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/0/J/kZvjbzqQWjywYl92mYTQ" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/0/J/kZvjbzqQWjywYl92mYTQ" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/0/S/LYmk-vIkOH9DPwtPIKRg" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/0/S/LYmk-vIkOH9DPwtPIKRg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/1/N/A+FjMlTTl4dN9JYJShCA" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/1/N/A+FjMlTTl4dN9JYJShCA" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/1/N/XjHlLW0V-DP-vdrGKzaw" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/1/N/XjHlLW0V-DP-vdrGKzaw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/1/O/uP9esyNkn0A7Nya-k8iA" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/1/O/uP9esyNkn0A7Nya-k8iA" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/2/C/6Q8Tsru61qZ9+CvvFipA" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/2/C/6Q8Tsru61qZ9+CvvFipA" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/2/R/H0+ON7t67qJgboCfqZ5w" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/2/R/H0+ON7t67qJgboCfqZ5w" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/3/N/TjsKY6tAk15BJDzcBkbQ" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/3/N/TjsKY6tAk15BJDzcBkbQ" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/4/X/eThDn8HUuYU0Sgg6JEtA" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/4/X/eThDn8HUuYU0Sgg6JEtA" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/5/K/Hx7ZkAzuyRdTELDRcV+w" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/5/K/Hx7ZkAzuyRdTELDRcV+w" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/5/Y/ptce27IBAMbTZWiP4hbg" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/5/Y/ptce27IBAMbTZWiP4hbg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/6/2/QS7Nd7rO0vk1PgHw9teA" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/6/2/QS7Nd7rO0vk1PgHw9teA" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/6/J/Oo+u4PsnGX6K5Be-OsPw" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/6/J/Oo+u4PsnGX6K5Be-OsPw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/6/Q/2WmCCiJD0Xcb62S7lDEA" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/6/Q/2WmCCiJD0Xcb62S7lDEA" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/7/A/EyZpsKvRG3XUDycjwOSg" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/7/A/EyZpsKvRG3XUDycjwOSg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/7/A/qQhEpzn-Jdy-Hrh0N4SQ" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/7/A/qQhEpzn-Jdy-Hrh0N4SQ" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/8/X/CiKLMaSJPcYkiwWWs2uA" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/8/X/CiKLMaSJPcYkiwWWs2uA" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/9/W/zOY8ms0Cs18Wl3DiSRrQ" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/9/W/zOY8ms0Cs18Wl3DiSRrQ" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/A/G/DZUwxIhInZg3bYYDezJA" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/A/G/DZUwxIhInZg3bYYDezJA" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/A/S/tjtbhL1sc5V1VKcuLV2g" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/A/S/tjtbhL1sc5V1VKcuLV2g" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/B/N/zW4FQGB9PsNJdaIsrGFA" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/B/N/zW4FQGB9PsNJdaIsrGFA" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/B/Q/hvbupTiNXRmGbv8-eHRg" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/B/Q/hvbupTiNXRmGbv8-eHRg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/C/0/BRniY5krNDCajvVEbEMQ" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/C/0/BRniY5krNDCajvVEbEMQ" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/C/O/r92Sm4NUVN2RrOZ7ZnJQ" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/C/O/r92Sm4NUVN2RrOZ7ZnJQ" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/C/R/0cBkVzi2Rm1imSvD6I3w" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/C/R/0cBkVzi2Rm1imSvD6I3w" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/D/9/cu-oVjtxwXjTe85tYJDQ" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/D/9/cu-oVjtxwXjTe85tYJDQ" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/D/H/PvEhyJbjKIaa0mCPz2eA" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/D/H/PvEhyJbjKIaa0mCPz2eA" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/D/L/eqJUVs4G-RxyoVkvTXNg" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/D/L/eqJUVs4G-RxyoVkvTXNg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/D/O/sBJCX5VOLHvCKPUqc+aQ" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/D/O/sBJCX5VOLHvCKPUqc+aQ" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/D/U/Jwcb6mT9UlvE-KchWirA" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/D/U/Jwcb6mT9UlvE-KchWirA" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/D/X/mHNDLVATjL7OtxQpnBmQ" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/D/X/mHNDLVATjL7OtxQpnBmQ" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/E/4/0iyl4aSA+Ms30cKGQPjg" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/E/4/0iyl4aSA+Ms30cKGQPjg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/E/G/-j9vorXlCbf34N-9z4ow" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/E/G/-j9vorXlCbf34N-9z4ow" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/E/K/3ddwC60HeaEHA95S9URw" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/E/K/3ddwC60HeaEHA95S9URw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/E/O/pAH49zhhG7XqzlI6NkIw" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/E/O/pAH49zhhG7XqzlI6NkIw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/F/9/HNmVqJOvqfw702hc5DUw" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/F/9/HNmVqJOvqfw702hc5DUw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/F/O/azstdxA+QUqM2wyDXSmg" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/F/O/azstdxA+QUqM2wyDXSmg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/F/R/ShYkoUOT4Xsruit6Mmsg" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/F/R/ShYkoUOT4Xsruit6Mmsg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/F/U/TlM-ABKYydAQqxrM4PwA" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/F/U/TlM-ABKYydAQqxrM4PwA" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/F/Y/rbZ+IsfMPrdUkREd-ejQ" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/F/Y/rbZ+IsfMPrdUkREd-ejQ" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/F/Z/UX8wifFQffXDHptJPiXQ" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/F/Z/UX8wifFQffXDHptJPiXQ" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/G/A/AJb+CPFJMgkjEzfZnyZg" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/G/A/AJb+CPFJMgkjEzfZnyZg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/G/U/Ut+MxEXBkT+Mh6Z5OllA" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/G/U/Ut+MxEXBkT+Mh6Z5OllA" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/H/9/CAiCrr2YzF3gdbqYrb4Q" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/H/9/CAiCrr2YzF3gdbqYrb4Q" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/I/1/ROJpIc-d9zT8K1qImt4Q" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/I/1/ROJpIc-d9zT8K1qImt4Q" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/J/E/w0MYeEsFlzIVH0xzwIjQ" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/J/E/w0MYeEsFlzIVH0xzwIjQ" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/J/H/1ctvs8QT6cS7lnH6gLeQ" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/J/H/1ctvs8QT6cS7lnH6gLeQ" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/J/K/l7VmZ80aiCvaSWJvf7wA" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/J/K/l7VmZ80aiCvaSWJvf7wA" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/J/K/wWgcJpnRPHJsAZ034w7A" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/J/K/wWgcJpnRPHJsAZ034w7A" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/J/L/IB-32i0hPteuufDcVjYg" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/J/L/IB-32i0hPteuufDcVjYg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/J/L/ZRIGVDeFNMrv2dH-gesw" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/J/L/ZRIGVDeFNMrv2dH-gesw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/J/S/CRgfGZbXWIKaIUWsuUsw" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/J/S/CRgfGZbXWIKaIUWsuUsw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/K/Q/f3rBEnBbpTqnNiPmpTsA" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/K/Q/f3rBEnBbpTqnNiPmpTsA" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/K/Z/B7-AMcmVvXGF+b2GTR9w" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/K/Z/B7-AMcmVvXGF+b2GTR9w" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/L/1/O+a-2GjD7i2vVKhy8n9g" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/L/1/O+a-2GjD7i2vVKhy8n9g" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/L/7/utIu+jQC+ICra+Frwgiw" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/L/7/utIu+jQC+ICra+Frwgiw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/L/A/MLD1I14x4h3-mfB4msgw" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/L/A/MLD1I14x4h3-mfB4msgw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/M/Y/0vw3Y5yc5cRJRscw4zyQ" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/M/Y/0vw3Y5yc5cRJRscw4zyQ" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/M/Z/p3O1hEFZkPK19fisdqRA" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/M/Z/p3O1hEFZkPK19fisdqRA" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/N/3/jqrL3LL8tOj9ZEuGmhog" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/N/3/jqrL3LL8tOj9ZEuGmhog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/N/5/mRxwM2atGxkWOSAKs5bw" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/N/5/mRxwM2atGxkWOSAKs5bw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/N/L/7hn06r1T-g5uRBeHvoCQ" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/N/L/7hn06r1T-g5uRBeHvoCQ" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/O/H/EV3DlUKYQqOUa+mY9hWA" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/O/H/EV3DlUKYQqOUa+mY9hWA" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/O/S/-OrxtBzpqLcIdq56aPEg" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/O/S/-OrxtBzpqLcIdq56aPEg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/P/8/ahyOnnwucVXg6+m7la1Q" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/P/8/ahyOnnwucVXg6+m7la1Q" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/P/J/65PQ-J1pbYYV+aS+XS3g" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/P/J/65PQ-J1pbYYV+aS+XS3g" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/P/V/1s+UAfLsIuJiiQx6r-lA" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/P/V/1s+UAfLsIuJiiQx6r-lA" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/Q/2/OpskirTTK1TEwWkhxK-w" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/Q/2/OpskirTTK1TEwWkhxK-w" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/R/+/btBapQ3lVssqjXp0NNZg" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/R/+/btBapQ3lVssqjXp0NNZg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/R/P/W6tqyqAAenzTc3km6UDQ" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/R/P/W6tqyqAAenzTc3km6UDQ" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/S/C/uZIy4K2AznZQtWOfXTwg" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/S/C/uZIy4K2AznZQtWOfXTwg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/S/G/QjRcPQohVwQlQPkzNldw" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/S/G/QjRcPQohVwQlQPkzNldw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/S/O/dXw6ipSJ4b7JE6xvFVxQ" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/S/O/dXw6ipSJ4b7JE6xvFVxQ" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/T/8/RAYA7f3cgi6pEITwt97w" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/T/8/RAYA7f3cgi6pEITwt97w" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/T/C/rd+PMd0b9JwpaSXavC7g" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/T/C/rd+PMd0b9JwpaSXavC7g" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/T/N/fZUyuXWPIr9ZcGxEKI5Q" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/T/N/fZUyuXWPIr9ZcGxEKI5Q" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/T/V/s3SgEryTycFMw8d76ddQ" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/T/V/s3SgEryTycFMw8d76ddQ" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/T/W/BchEXkK0hFTSv9uHLNow" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/T/W/BchEXkK0hFTSv9uHLNow" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/U/9/072rYB0h6nqae59X9luQ" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/U/9/072rYB0h6nqae59X9luQ" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/U/G/N-meF9qLuTb-uoEqNxUA" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/U/G/N-meF9qLuTb-uoEqNxUA" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/U/L/jDRZHx3EbOerWUWfe4yA" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/U/L/jDRZHx3EbOerWUWfe4yA" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/V/2/Hg77vH89LbfNL5glg1Dg" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/V/2/Hg77vH89LbfNL5glg1Dg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/V/C/vTCAvjV+q1ZKE2dPp6zA" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/V/C/vTCAvjV+q1ZKE2dPp6zA" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/V/M/8eQ0TfauazgBmj8uUsTg" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/V/M/8eQ0TfauazgBmj8uUsTg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/V/S/YTMHwjJ9j55kLmoMhsdg" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/V/S/YTMHwjJ9j55kLmoMhsdg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/V/U/VEmnHuJZbnu2bQmmy9sg" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/V/U/VEmnHuJZbnu2bQmmy9sg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/W/P/+5qHMvbHVvxJb8SxG8cg" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/W/P/+5qHMvbHVvxJb8SxG8cg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/W/P/xbjysVQ3g7V7Bg0336+w" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/W/P/xbjysVQ3g7V7Bg0336+w" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/W/R/rnTGcT4kXILoQHuBQd5g" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/W/R/rnTGcT4kXILoQHuBQd5g" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/W/U/TxOL61Cj-r6hrgRpzPEA" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/W/U/TxOL61Cj-r6hrgRpzPEA" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/W/Z/er1mI05tXBKxdFD-Uwig" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/W/Z/er1mI05tXBKxdFD-Uwig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/X/H/8YKCDEesz0YidTB1+oug" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/X/H/8YKCDEesz0YidTB1+oug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/X/O/g5ELLYta3SVoiCEsD6Og" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/X/O/g5ELLYta3SVoiCEsD6Og" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/Y/F/nSqX6Udw4Jtj1TqTWkVQ" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/Y/F/nSqX6Udw4Jtj1TqTWkVQ" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/Y/H/9yE+gLqfqOLXGcexBNHQ" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/Y/H/9yE+gLqfqOLXGcexBNHQ" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/Y/Y/8AZJ1EJ0tJcf1Is3D3Ng" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/Y/Y/8AZJ1EJ0tJcf1Is3D3Ng" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/Z/B/PWEHkV+pLc+MtC+Q8aJQ" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/Z/B/PWEHkV+pLc+MtC+Q8aJQ" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/Z/R/lTv3clhBqMZmEpsBaCvg" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/Z/R/lTv3clhBqMZmEpsBaCvg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/Z/Y/NX9i-Ib8cErVwarmVExw" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/p7NVaVzK1b/Z/Y/NX9i-Ib8cErVwarmVExw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/srcApp_KernelDevDebugContainer.php" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/srcApp_KernelDevDebugContainer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/srcApp_KernelDevDebugContainer.php.meta" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/srcApp_KernelDevDebugContainer.php.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/srcApp_KernelDevDebugContainer.xml" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/srcApp_KernelDevDebugContainer.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/srcApp_KernelDevDebugContainer.xml.meta" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/srcApp_KernelDevDebugContainer.xml.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/srcApp_KernelDevDebugContainerCompiler.log" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/srcApp_KernelDevDebugContainerCompiler.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/srcApp_KernelDevDebugContainerDeprecations.log" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/srcApp_KernelDevDebugContainerDeprecations.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.af.52lf549.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.af.52lf549.php.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.ar.52lf549.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.ar.52lf549.php.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.az.52lf549.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.az.52lf549.php.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.be.52lf549.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.be.52lf549.php.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.bg.52lf549.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.bg.52lf549.php.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.ca.52lf549.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.ca.52lf549.php.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.cs.52lf549.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.cs.52lf549.php.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.cy.52lf549.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.cy.52lf549.php.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.da.52lf549.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.da.52lf549.php.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.de.52lf549.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.de.52lf549.php.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.el.52lf549.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.el.52lf549.php.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.en.52lf549.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.en.52lf549.php.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.es.52lf549.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.es.52lf549.php.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.et.52lf549.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.et.52lf549.php.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.eu.52lf549.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.eu.52lf549.php.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.fa.52lf549.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.fa.52lf549.php.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.fi.52lf549.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.fi.52lf549.php.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.fr.52lf549.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.fr.52lf549.php.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.gl.52lf549.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.gl.52lf549.php.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.he.52lf549.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.he.52lf549.php.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.hr.52lf549.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.hr.52lf549.php.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.hu.52lf549.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.hu.52lf549.php.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.hy.52lf549.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.hy.52lf549.php.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.id.52lf549.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.id.52lf549.php.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.it.52lf549.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.it.52lf549.php.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.ja.52lf549.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.ja.52lf549.php.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.lb.52lf549.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.lb.52lf549.php.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.lt.52lf549.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.lt.52lf549.php.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.lv.52lf549.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.lv.52lf549.php.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.mn.52lf549.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.mn.52lf549.php.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.nb.52lf549.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.nb.52lf549.php.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.nl.52lf549.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.nl.52lf549.php.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.nn.52lf549.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.nn.52lf549.php.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.no.52lf549.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.no.52lf549.php.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.pl.52lf549.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.pl.52lf549.php.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.pt.52lf549.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.pt.52lf549.php.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.pt_BR.52lf549.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.pt_BR.52lf549.php.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.pt_PT.52lf549.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.pt_PT.52lf549.php.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.ro.52lf549.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.ro.52lf549.php.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.ru.52lf549.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.ru.52lf549.php.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.sk.52lf549.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.sk.52lf549.php.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.sl.52lf549.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.sl.52lf549.php.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.sq.52lf549.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.sq.52lf549.php.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.sr_Cyrl.52lf549.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.sr_Cyrl.52lf549.php.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.sr_Latn.52lf549.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.sr_Latn.52lf549.php.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.sv.52lf549.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.sv.52lf549.php.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.th.52lf549.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.th.52lf549.php.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.tl.52lf549.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.tl.52lf549.php.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.tr.52lf549.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.tr.52lf549.php.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.uk.52lf549.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.uk.52lf549.php.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.vi.52lf549.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.vi.52lf549.php.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.zh_CN.52lf549.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.zh_CN.52lf549.php.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.zh_TW.52lf549.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/translations/catalogue.zh_TW.52lf549.php.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/00/00414f08c8dda704d82408ada7c67a2d21ac6e7f377e9c28e590742dc252ac6d.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/00/006e7e27a96cad2c1d07c53cf5fb77112aeac2576f6e1f1d463727847cc093de.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/01/0113f2f405265ba6a61dfec41258d0eea8f5163af4bdb20a70dbc2ac82ed6816.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/04/04abbec84653b136a4dfa2cb0fc0500d8eb5cd1aa839b63025cf2d964125af88.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/04/04ee4fa1b7c90d9e5e8512cbd99859a4eeaca59864027796e14af2b9241529a4.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/05/059455796548858e2556e1ef71a5e454579f02c4d0efdc85dda4d8136f082c08.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/05/059cca25018f9eae46663e3c0b23ca497a516341fd291be054d2092b48e9d885.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/07/0798874165dff6d6b8c5f99343dd65e1cb9da01d85dd2cb7ad662a1281d9153c.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/08/082c049c8ad967466d64b6f695a35df44e6594570a4dc239d599668393c966c9.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/08/08d1ef54d98acbc5cefe3728e4a11b5f35c0b8685c3ab3108f1a3a48d3e94c64.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/09/097c3dfa8bfba21cf3f9c5f98ecb8ba795362b1bf767b83e82682f82dcd47e9d.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/0a/0a453b5af4a1c05cae459369e39428167a45ffdbb1ab3aaefad44d5d035ba41b.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/0f/0f307ec9195e16f26399f1c76491ab219f3b232212ad0f977217f9d5a45cb5fd.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/0f/0fd6a5b8c9fb03de34c61912e4a41b481bb2786dadfee22791bbc082426fbc83.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/13/132f60a8b0fa4f9104b8fcf1d7064c5df3ed7988b01782922bde7cdcb5cbd911.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/14/1488275f28c41c220c098b1da17aefc3e9463ff0c9e8cd2658d8a667274df74c.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/15/153e00378172558ad3c91acc58a816b62d5e61343e012ac210355a4b04756db5.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/16/16a1342dca448319b08f900215378de196f609688aea07bbe302ffa7048481dd.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/18/1837b6316bc60cdde765bb9b3a564cd48f038f3d2dff79a124f48b7b8e2ed539.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/18/18623a6af2b00c181fd5f52f495a9ef0e7f580dcf2870166d6c98feaef5667a1.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/1a/1a0953cd39dfae9f03941d9f00d9f057529421ea28155a4d30bf495107bd1b01.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/1b/1b3d1aa998032016db765dd3c7544cd5a542a395da27cad2d520c6d42e0f45d8.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/1b/1b3d7fe88d54159e9ef552c4178312d9ca16f14238eb8fce3287ce18221e5b81.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/1f/1f80978d6b77a041bb80d4d9813ba100f4c1cb108ebb6b2a1adb323f065d9cd1.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/1f/1f91b3bde05730684d7601bb8d313a47d51f1f8d3fe228909226af9b8324f8ee.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/20/2010ca778ae0c28a3a2353c3b5a79a47a59f0204deb07c6414d32e47de07472f.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/20/2073f2ef87a87288e7ea6a6d5b127b015add0e41f68875ff04bc543e742303d9.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/21/21f4dea9c5faf8001243ebf4c991de16599e9b6bee234c5c4ad2f35966c2e1df.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/26/261b7e31632bd531c726f25bc90fee39cb3ba792a0b55eccb67cd92debbd5f21.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/26/26ab84b4c681f3867d76d3141daa236036ebbaa01291fd11abaf5c39d59f8bd1.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/28/28e12434682ee3659fb118764dcb40d77885c2e9ffcf8131a904effd714e80ee.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/2d/2d1f473f1ced4da366238497163cc65513537a0456652b9bdecaf8a7287ab5f4.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/2d/2d817597f6d49f64857df5a018aca1aec3c6e43655155bc61d2385c3c0133fbe.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/2e/2ee8ad664130895d4f874317a1ed9ee362843bb0709c1a5ce5628374af09c74f.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/30/304bccbcba0fc65c3273b2cab2fa456a90c86045c79ec31624b5a46e75eefbb3.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/30/308da2d9023e0188eb6242eec3b789270abe012bb22683775a8134278e1d2a37.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/31/31d545dc10e0eaa42bf61e546656f440cc4c27934bfd35dcbe4738d41cf85752.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/33/333353322f2fde11ab5b917c9529bd1a0328c8f074ee879fd6ec9eff6e48223a.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/34/343f8f5e4191ed8463fefb1fa6a399289762984b2d41d519bc736d801549d8aa.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/35/355d865b04292bcf875ac4bb35f859aa382c2a71644f9759753b783b16037120.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/36/36b58619964d665a183e0f614e6e14e572fb2700ba8cdfbfa4fa089a2ce83bd8.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/37/3700aa4ce5d41ef399453183fe8e24c554237fcb6e2ca523bc4ec9c3470dc3db.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/37/37213b47b994a8d5471726a4e7ce52d7272f2286146b757d232a29698a1faed7.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/38/38322e468d0a76b355aee59184ee7808380cfe81b62f564d669066cc13d1b0a4.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/3b/3bb267cdc88333be77849b73598a8bd93bb6f9b86fc6dcba50d7186cd57beba4.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/3b/3bf8de76be0fcd68e02cd0fe858e30133f366008bc45a88567a3664569c4e1f9.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/3d/3d4e44f2fc451987d60cdfb0ea6306c710e75a0a62f50ff93fcb431e5e75243f.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/42/42fb639f0098999305be6ce729bef03684378a008f859b2af82fe034b2e2d54e.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/49/4972db1a9113c89059f4a288c659d8540a3a6700563600b0a3ed495941dff15f.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/4b/4b7a7a0b2d549099b3881cf04660970a2237933bdbe6b03ec5ceb89c10e00266.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/4d/4d9de383cf8c5d98b55eb6e07311fc1b5dde94f2f370503c4d168d7a6567965c.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/4d/4dc8b393f1e478c9f45265a6186016de3c4a9a2377f0aaf16c71cbbab9aa44fc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/50/50b3d6428c1ea5feafd76e265e1a05971f575534199f5337871856a79623a293.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/51/51dc525139553dc3375c4b9047a7734757257f858fc3e8077c101eb9a1b77090.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/52/528690306b37096fe39d77f8256eb2ad673892b1def6b3395c7e4ed3f95b4276.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/52/52f975406d42d178288d9ea566ee0cd5185d811264e81fd5637ed937c29b6ef1.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/54/547aacf58eaacbe6b3fdfc0ae0648630070c1ed527d94373db7ad242a7e2def2.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/54/54ad22296d934e3ea6c9de14ab04a14be410ecceeb4ccb5ccf8608961e20e0c2.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/55/55e4c1e6ef8b746cf71f97ff048cc2f395c37b1fe4c0c6e2a25b0927840c7efa.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/57/57965a01231cf94904ddd7a61f4bd60d35903f52a1777b6c884106986a87c15a.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/58/5895cd37006e0dc7fe6c961189ad84f5d1665767953ffc38e219224d192bf203.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/59/59467c1924145bb45fb1337e13d99d7bcbdb9b9c1d5915e0fa8770d7e34f4425.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/59/59fca6c5d4abed21bb41e989114504406dc92bf4b8ad1ace0ed96fde55eca8fb.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/5d/5dc69f5ca487aeeed8e2a49716dd5efedb21c6f87653817055eb1402097e2fb4.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/5e/5e555add89fa9254fe2a3cd780058aea6c420c274e670be8e007987f6016f73f.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/5e/5e57c2bdf1f4075d255d410743f7f1f13ec443b7bf7f425ef22b3c0a41e21f61.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/60/60906411716dd1d894e898d15913abd5f26ad7884f5abb384b58074ca8e82b08.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/62/627ab446ac9d57d9f420f452c24f8f85efd5747239ebd61b59246dd0f80a39cc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/67/677c4cfd0d038e6bf70211c24cfbccd6e4909eb29a18ab5c85c187f3c45caad0.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/68/68b7398a4d96c07cc677955645b26a72c48500fd9d752278c168072e2204f03d.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/6a/6a70d6f6d3c2c42011824c3a96a248a50029cb5bdf80b8bf665ac69816856111.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/6a/6acb2697af7df2c70ae55f8b84150ec296749e9891af37df66c41f9e619a525a.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/6c/6c0b7c31a2f659d3b46a42cb349e559bebe00c87739245def0bf23574c7e22d5.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/6c/6c21718f70056d9229e5efc7decb059471cf24d185bfc91e4e05fbaa55db4740.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/6e/6e07f884e5c5e7f354f6bb2eddec73b78191838e35d945c0f2ae1e00d4de1aa6.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/70/7004e1f75cdc4c95ed0ed44a7d62ef883df828864a065408669b0f162adb15e7.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/70/7007fdb42b19f1ef8019091169f4a9131df104f180d1a8bd37aae58221dd9890.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/71/71c85b7797fe9d73b18c460f849c1cdfd2ef1af5ce39cec7b609f26168ed4bed.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/72/72cc661cf7731f5f84f806b8337e4e4ed3fecdfc43a1244d4d5a61c9d8b53dc0.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/73/7385dc65894927d5e88d95ee0e73fc81d38b928bbd1dad493aa948767d0b888a.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/75/7507df991741a4fa9b4b28c66e2e50563be6b573e478b408e84fabf3670a3e2c.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/75/75abb3447f56d29bd6002d5778e76ad6b77c82b9dc178a069584ac648ae75edb.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/76/766a88fe0da0fff23f776bfcffdb3d0fadce0d67873ec87f94140e5ee3751e00.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/7a/7a6ce4e4d3f8d8d69800a81fbd77f8b31ee4ee89e2275398077607366bb47666.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/7a/7ae3f44c0e3d1f6eb536055eb1a1bb1dd0960581d7c9a8b80262640d4554f0aa.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/7b/7bcd94ab7a67df6a0716737c97ca93dbdf506abc61275c8d9f88227fd571fbe5.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/7c/7c1876002035b55e48d2021bd4ff33f00f24271fdc619d12f8dc0846b0770a62.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/7c/7c5a78aa02d881863ffc94178069e6eb00e70e238201e54005abc1610a03d6c5.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/7d/7d4c6983531895c3c1f31cb247b618323cffa57a597fe51bd0b5517555bebb0a.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/7d/7db08048826171dbfbf294473f42c359afdfa5a7be2cbd91d788c0e7e216f2a0.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/7f/7f0e6dcd04ff4abfcb8abb5aa37a7709698195af460719544d90a1fdefb8de13.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/83/8345a7e6672f8877875c762b0bf44dff76e437691b3f79810688878b0113cbf5.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/83/83a2bd5dd9cc494be36ba4955fe8b886d3af7cec88b6211354e6eeaf7d134ea9.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/86/864ce5c4d78cf55987a80ead4afeadb548af64c22dbe50c3245ee8948dafa607.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/87/8770c0c9f895a4bbcfe02124da5967c09561e65e78a01bc2a0e37bcf59a6116f.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/8b/8bd68f4668e4ac9e1383861289f3a331ddd363fad6100031b6f8e5a8decc0db5.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/8d/8d3e26225863f3eb6bdd215ea96c3978e6b8e0c6806f1e8a5f752774e671d50c.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/8e/8e3f9089b61ced9afbd0be935ada13462c6b24480fdceb9661219f2c2bb9eba0.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/8e/8e61d31f2db1b6865c71a589487519d0f98db59bc695bc08a16e7e2c2b3e5827.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/91/9190729eee9b6aad1126e4bb86bd31ea535c1bfa7d25880d52ffbd9abff441fd.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/92/92c722e6d9e04804c7b887f816f5d47857f49bdc55e4cc47233981eb6eb4a9fc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/96/961d0beec3f90590d88802e5dea22a09c42c5ae3fbecd9d1bbb6239c9fdf8507.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/96/9697c1a909d273b35447e37a5e677a7b2d64a9906d126c67c70ce65c01206e0c.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/9d/9d7d9ef75540b6155e073e6402f66931c64cf1df3c6c5bf5696937606faa7a2b.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/9f/9f0d97004103abf8f755b160125c86d254bf6e865901c094668e8c2b958c9c94.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/a1/a17aee78f9e84683de0f8aa70cec112ad677111652c31704c4296c540ff8de85.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/a1/a1d9debff61d5a2410a6d2fe6178e6f741d3705ddb7de351b9378aafe8163c85.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/a5/a5e49b79021bdfd1ecedc5d3c04e3c39c42fcfd4d79909402c98c78f1144854d.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/a7/a7a0215cd98cac846e7b70d69eb4a0ff73488a675a4acaac228219e6ffb66251.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/a7/a7aa5b301e87f774aa40d6711cbe4b390401d7f94126fe6693944cce3872b994.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/a7/a7ae39c8dc263fbeba06aac4c36ef95d8d726729d64cb9161f628c30b0a1ea0c.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/a7/a7da8af7957ea8ec3be06b248687e9800616116b436acf6d761a6ec90edaf5dd.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/a8/a8f4cecd4b5bf52268baa0e452d0841635d113f0f691451b6285f4b7909893b6.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/a9/a92894cf77b0cdb67fd541883fe71ece3becb479ccb319d771175e2d1350b5ca.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/ab/ab1a04a1c6f9116fb2ca01dc43c2142c3697acbd527a02b749cba7a3b27984de.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/ac/acdd931d67f04c5c35883b8860387a6aa7717e7f5364755fa9fb9f2d6310bc4b.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/ae/aea3aee5bd52e8cb5fc8d04fa4e00168373b1316f15c290628f2044de9d71eca.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/af/afe6d3efe18bf777f5e4c7d054bb3b24c19d9e1fa933b893cdef0378ef014b50.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/b2/b2d85ca3b231039c391372fb3777967734922088b9f2dd40076b2277535c27d4.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/b3/b3ce4f581baf2daaec8ef20114f004aaeafb1c1a9ffd296a0131fe641ab54d49.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/b4/b4557d605414bea0d9f35fdac8880e61568b53cb7394091aa54186c7dafb1227.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/b4/b48e2283f4d013ae93dbae587cd066c39d02f0f0e93005181f4066c5454d4a41.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/b5/b5d1596fceb28ca0036938197409ed0ccfc3c1df0b2601b3cc11b64b7385dd15.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/b6/b69708fbd40086d473ca868dd656de879960c0def7c006271ae2e7bf14b5412b.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/ba/bacfee5bf6db1c1d2abde04ce46fe87e64963434a6d295673e2e6c4f0dd4695f.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/bb/bbeae156348b29581362a50bb875a2b450c68643c15dbcf2cd724917b8a9b22c.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/bc/bc475edbc2010fb238b9476b5e9288b068873704f0a2496fe777489571e7f217.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/bc/bce079b1929a2efc77da161eeb51f6decb074fcfec7adf23839af7145bf6b7c3.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/bd/bd1871eb3acadabfbf949899d1551ebc9a57cbe888c89149bfa5a95794c246cf.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/bd/bdcaaf6b39327514eeb949aaa601488f08571f562cfa9eb0898c1d39514a5b78.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/c0/c0e3e64397de2a02635bad355e6398e481f0e306cbd5edab6dcd0e9d4bf35715.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/c1/c19dd89ad19a77b2080c5c6c795e8e389a20fccc45b47360bbe449648448f00a.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/c2/c26db02dfd639e0da18c68b5a6ad3b528165b79f55065511e1d306dd83401643.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/c4/c4f6a3cf457cd84a13d39f8986c7d1e78a25dc78eba92ce0d73004ece82c0516.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/c5/c5ebabd7f8dac5f0297cf6b926ac5cb2baeef5f3d2c45f4432db2552bb5cf295.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/c7/c72eb1d4184613c4369ce9d532a7f4016a1a6ff586731a8ea03f79fd61e361fb.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/ca/cacfb38349be826c4d500e275451eb777cf798043366e04890c080ebb828a73f.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/ca/caecb1977327be1a6b45c13dbd447284ef9a99215f924d4c8afce7d0792bfbfb.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/cb/cbc2b65e7b7c66c49b688a902e30218a4fa3418fccc1282f9e284aa4283ec743.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/cc/ccbeaeb49f489d58369e7ca5d690570f3ada37d48bc34157ebdc98c56017f5c3.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/cd/cded319e9fc067c18569900075cdb04ad9b19b7bc459af5d7cbb70ae4dabfe36.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/d1/d1e98b424bf9165465729b529e430b08d177c9cbc0b19da8ed167703f1fa0d24.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/d4/d44421d484fdf7b14e14ec21e7f66f43808cb4aefac3e2546c38d58864d6c58e.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/d8/d8147812adab00c3bf64478fc0f4fbf7095b3b654afacce7e1719fdd45d38946.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/d9/d90a03f17a9011f603cae858eddf5aa9e71324fc948b73989a72b434f13a21c7.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/d9/d96354b57d395ddebb5c417ed3a7a25e02c7d865818f47dcf041886875fd46ba.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/da/da77ff06e9421d81d885b988ecaa67d97b821ad1e3560a3f942611f0396577b6.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/da/dafcba21a8e179798ab476ed1d708a5224896705af2f0248a3cf14e2b9d00564.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/df/dfdc449f1583d9328b1bf3faaa1d3c82703db10918645dd33708ec20f1e6448d.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/e2/e21766642b80722fad49b051431c26e929662a27fe31b769202baee3a3913521.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/e4/e43802c8b8d5e46be76075e616a279a6a1281a5deb6b7969f14ffc0ee8e10774.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/e5/e524568c57122d6c3201772cbe6e41f4d0d270d613a6c1d8e668d4bf950bd69c.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/e6/e65d1d0c7a378ec79bdd61dfb8635dd0724e73bb8f50257e29e4184d7a7c8b73.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/e6/e6a415791f2226542696c3c3889571dd74dd8fa7488b0d44bab6b92a6de9504e.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/e7/e738d3a71bfe691465a94a6a955cc6a1c90652a0f05f442a384e444c0d9e71f8.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/e9/e970740031e0fb9c0fd271edbffe6af80e725cd37acac0bb9d634e2d6f4081b1.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/eb/eb02754fb0c6b52a99854bf1cf191403b960bd807ebff09bcef75b15b66f706f.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/eb/ebc192f8ec14bb1e0e6bab964761f7bf33dac237066162dddc8c105ca10b6824.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/f1/f10b9174e1ca6011adf3267cc65cc905466a6a9a625380f338baddcda5d3dbd3.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/f1/f16675e0f71b672ef550048c34df2eeff0d18a60f6f7dd8ef2dce1132c562496.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/f1/f1a361c365c1dce18a525aedfffef0d8cf0ea7e9a17e2b534a91188b53fa5702.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/f2/f242111e87984f378559dbfa0ccfd16f6aa0905e56dea9aa6267b2400b63da66.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/f4/f44aa94095527990db96c92ea73c6865cca3ce313ffb85da54eca68d17bdff07.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/f5/f5c74acee09d0aa4c4c5aa6c1d6a1a42e5e1864d57356515d99826b0e3119f5b.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/f9/f94d06a4afe106e4dccc681b7f133756e70fbbbd2b36b02fd4160232846bc85e.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/fa/faa59515aa859faffc803e474e97a5ce6860ce57deffa20e4b0195f77a883b39.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/fb/fb368420885ce52dcb4c8ab4765f7f4cacf4945a1e2197a8deee7fa629c144a3.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/fb/fb66954a4682ace7f234eddfee0156de2c12afaf6202d59b59fe1cb0a9d1fdce.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/fe/fea3e68d7f516aa15330ba019ee9169b955126d3d073dfa1b8a71c76c2f3ba43.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/ff/ff297355351727f03deadd2a5978207b89a84f6abb92dc379d2858e8c13e89e3.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/ff/ffd19b5a1bb42ce5bd4728b6ff2e675ea59c7b6e06482a0f275bffa76fe0d53f.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/validation.php" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/validation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_files.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_files.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_namespaces.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_namespaces.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/installed.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/ocramius/package-versions/src/PackageVersions/Versions.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/ocramius/package-versions/src/PackageVersions/Versions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/config/Definition/Processor.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/config/Definition/Processor.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/security-http/Firewall/AccessListener.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/security-http/Firewall/AccessListener.php" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="routes.yaml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/routes.yaml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AccessListener.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vendor/symfony/security-http/Firewall/AccessListener.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="742">
+              <caret line="68" selection-start-line="68" selection-end-line="68" />
+              <folding>
+                <element signature="e#7#236#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BlogRepository.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Blogger/BlogBundle/Entity/Repository/BlogRepository.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="351">
+              <caret line="51" selection-start-line="51" selection-end-line="51" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="framework.yaml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/packages/framework.yaml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BlogController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Blogger/BlogBundle/Controller/BlogController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="493">
+              <caret line="29" column="71" selection-start-line="29" selection-start-column="71" selection-end-line="29" selection-end-column="71" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PageController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Blogger/BlogBundle/Controller/PageController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1105">
+              <caret line="68" selection-start-line="66" selection-end-line="68" />
+              <folding>
+                <element signature="e#53#118#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LazyEntityRepository.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Repository/LazyEntityRepository.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="946">
+              <caret line="166" column="64" selection-start-line="166" selection-start-column="64" selection-end-line="166" selection-end-column="64" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CommentRepository.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Blogger/BlogBundle/Entity/Repository/CommentRepository.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1224">
+              <caret line="72" column="20" selection-start-line="72" selection-start-column="15" selection-end-line="72" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>An error occurred while loading the web debug toolbar</find>
+      <find>newInstance</find>
+      <find>setfr</find>
+      <find>send(</find>
+      <find>setto</find>
+      <find>setUpdatedValue</find>
+      <find>does neither exist as service nor as class</find>
+      <find>setsl</find>
+      <find>min</find>
+      <find>setbl</find>
+      <find>remo</find>
+      <find>createQueryBuilder</find>
+      <find>setCommentsCount</find>
+      <find>Symfony\Component\HttpFoundation\RequestMatcher</find>
+      <find>ROLE_ADMIN</find>
+      <find>super-admin</find>
+    </findStrings>
+    <dirStrings>
+      <dir>D:\OSPanel\domains\sym2</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/Blogger/BlogBundle/Resources/views/Comment/form.html.twig" />
+        <option value="$PROJECT_DIR$/src/Blogger/BlogBundle/Resources/views/Comment/create.html.twig" />
+        <option value="$PROJECT_DIR$/src/Blogger/BlogBundle/Form/CommentType.php" />
+        <option value="$PROJECT_DIR$/src/Blogger/BlogBundle/Resources/views/Blog/show.html.twig" />
+        <option value="$PROJECT_DIR$/src/Blogger/BlogBundle/Resources/public/css/sidebar.css" />
+        <option value="$PROJECT_DIR$/src/Blogger/BlogBundle/Resources/views/layout.html.twig" />
+        <option value="$PROJECT_DIR$/vendor/symfony/http-kernel/Controller/ContainerControllerResolver.php" />
+        <option value="$PROJECT_DIR$/config/packages/param_mails.yaml" />
+        <option value="$PROJECT_DIR$/src/Blogger/BlogBundle/Twig/Extensions/BloggerBlogExtension.php" />
+        <option value="$PROJECT_DIR$/src/Twig/Extensions/BloggerBlogExtension.php" />
+        <option value="$PROJECT_DIR$/src/Blogger/BlogBundle/Resources/views/Comment/index.html.twig" />
+        <option value="$PROJECT_DIR$/src/Blogger/BlogBundle/Resources/config/routing.yml" />
+        <option value="$PROJECT_DIR$/src/Blogger/BlogBundle/Resources/views/Page/sidebar.html.twig" />
+        <option value="$PROJECT_DIR$/src/Blogger/BlogBundle/Controller/CommentController.php" />
+        <option value="$PROJECT_DIR$/composer.json" />
+        <option value="$PROJECT_DIR$/src/Twig/Extensions/AppExtension.php" />
+        <option value="$PROJECT_DIR$/src/Blogger/BlogBundle/Resources/views/Page/index.html.twig" />
+        <option value="$PROJECT_DIR$/src/Blogger/BlogBundle/Entity/Blog.php" />
+        <option value="$PROJECT_DIR$/src/Blogger/BlogBundle/Entity/Repository/CommentRepository.php" />
+        <option value="$PROJECT_DIR$/src/Blogger/BlogBundle/Entity/Comment.php" />
+        <option value="$PROJECT_DIR$/src/Blogger/BlogBundle/Controller/PageController.php" />
+        <option value="$PROJECT_DIR$/src/Blogger/BlogBundle/Controller/BlogController.php" />
+        <option value="$PROJECT_DIR$/src/Repository/LazyEntityRepository.php" />
+        <option value="$PROJECT_DIR$/src/Blogger/BlogBundle/Entity/Repository/BlogRepository.php" />
+        <option value="$PROJECT_DIR$/src/Entity/City.php" />
+        <option value="$PROJECT_DIR$/src/Entity/Address.php" />
+        <option value="$PROJECT_DIR$/src/Admin/CityAdmin.php" />
+        <option value="$PROJECT_DIR$/src/Admin/AddressAdmin.php" />
+        <option value="$PROJECT_DIR$/src/Entity/User.php" />
+        <option value="$PROJECT_DIR$/src/Entity/Group.php" />
+        <option value="$PROJECT_DIR$/config/packages/framework.yaml" />
+        <option value="$PROJECT_DIR$/config/services.yaml" />
+        <option value="$PROJECT_DIR$/config/packages/fos_user.yaml" />
+        <option value="$PROJECT_DIR$/config/packages/acl.yaml" />
+        <option value="$PROJECT_DIR$/config/packages/sonata_user.yaml" />
+        <option value="$PROJECT_DIR$/config/routes.yaml" />
+        <option value="$PROJECT_DIR$/vendor/symfony/config/Definition/ArrayNode.php" />
+        <option value="$PROJECT_DIR$/vendor/symfony/dependency-injection/Compiler/MergeExtensionConfigurationPass.php" />
+        <option value="$PROJECT_DIR$/vendor/symfony/config/Definition/BaseNode.php" />
+        <option value="$PROJECT_DIR$/config/packages/doctrine.yaml" />
+        <option value="$PROJECT_DIR$/vendor/symfony/config/Definition/Processor.php" />
+        <option value="$PROJECT_DIR$/config/packages/security.yaml" />
+        <option value="$PROJECT_DIR$/config/packages/sonata_admin.yaml" />
+        <option value="$PROJECT_DIR$/vendor/symfony/security-core/Authorization/Voter/RoleVoter.php" />
+        <option value="$PROJECT_DIR$/vendor/symfony/security-core/Authorization/Voter/TraceableVoter.php" />
+        <option value="$PROJECT_DIR$/vendor/symfony/security-core/Authorization/AccessDecisionManager.php" />
+        <option value="$PROJECT_DIR$/vendor/symfony/security-core/Authorization/TraceableAccessDecisionManager.php" />
+        <option value="$PROJECT_DIR$/vendor/symfony/http-kernel/HttpKernel.php" />
+        <option value="$PROJECT_DIR$/vendor/symfony/security-http/AccessMap.php" />
+        <option value="$PROJECT_DIR$/vendor/symfony/security-http/Firewall/AccessListener.php" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths>
+      <path value="$PROJECT_DIR$/public/bundles/sonataadmin/vendor/admin-lte/package.json" />
+      <path value="$PROJECT_DIR$/public/bundles/sonataadmin/vendor/jquery.scrollTo/package.json" />
+      <path value="$PROJECT_DIR$/public/bundles/sonataadmin/vendor/jqueryui/package.json" />
+      <path value="$PROJECT_DIR$/public/bundles/sonataadmin/vendor/readmore-js/package.json" />
+      <path value="$PROJECT_DIR$/public/bundles/sonataadmin/vendor/slimScroll/package.json" />
+      <path value="$PROJECT_DIR$/public/bundles/sonatacore/vendor/bootstrap/package.json" />
+      <path value="$PROJECT_DIR$/public/bundles/sonatacore/vendor/components-font-awesome/package.json" />
+      <path value="$PROJECT_DIR$/public/bundles/sonatacore/vendor/eonasdan-bootstrap-datetimepicker/package.json" />
+      <path value="$PROJECT_DIR$/public/bundles/sonatacore/vendor/select2/package.json" />
+      <path value="$PROJECT_DIR$/vendor/easycorp/easyadmin-bundle/package.json" />
+    </packageJsonPaths>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/symfony/test-pack" />
+      <path value="$PROJECT_DIR$/vendor/symfony/css-selector" />
+      <path value="$PROJECT_DIR$/vendor/symfony/dom-crawler" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-client-contracts" />
+      <path value="$PROJECT_DIR$/vendor/symfony/browser-kit" />
+      <path value="$PROJECT_DIR$/vendor/symfony/profiler-pack" />
+      <path value="$PROJECT_DIR$/vendor/symfony/mime" />
+      <path value="$PROJECT_DIR$/vendor/symfony/validator" />
+      <path value="$PROJECT_DIR$/vendor/symfony/serializer-pack" />
+      <path value="$PROJECT_DIR$/vendor/twig/twig" />
+      <path value="$PROJECT_DIR$/vendor/symfony/doctrine-bridge" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-icu" />
+      <path value="$PROJECT_DIR$/vendor/symfony/cache" />
+      <path value="$PROJECT_DIR$/vendor/symfony/event-dispatcher-contracts" />
+      <path value="$PROJECT_DIR$/vendor/symfony/yaml" />
+      <path value="$PROJECT_DIR$/vendor/symfony/property-access" />
+      <path value="$PROJECT_DIR$/vendor/symfony/monolog-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/web-server-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/phpunit-bridge" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php73" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-kernel" />
+      <path value="$PROJECT_DIR$/vendor/symfony/twig-bundle" />
+      <path value="$PROJECT_DIR$/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php72" />
+      <path value="$PROJECT_DIR$/vendor/symfony/options-resolver" />
+      <path value="$PROJECT_DIR$/vendor/symfony/swiftmailer-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/inflector" />
+      <path value="$PROJECT_DIR$/vendor/symfony/web-link" />
+      <path value="$PROJECT_DIR$/vendor/symfony/security-core" />
+      <path value="$PROJECT_DIR$/vendor/symfony/security-http" />
+      <path value="$PROJECT_DIR$/vendor/symfony/expression-language" />
+      <path value="$PROJECT_DIR$/vendor/symfony/maker-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/vendor/symfony/security-csrf" />
+      <path value="$PROJECT_DIR$/vendor/symfony/orm-pack" />
+      <path value="$PROJECT_DIR$/vendor/symfony/debug-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-idn" />
+      <path value="$PROJECT_DIR$/vendor/symfony/serializer" />
+      <path value="$PROJECT_DIR$/vendor/symfony/service-contracts" />
+      <path value="$PROJECT_DIR$/vendor/symfony/var-dumper" />
+      <path value="$PROJECT_DIR$/vendor/symfony/var-exporter" />
+      <path value="$PROJECT_DIR$/vendor/symfony/web-profiler-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/vendor/symfony/framework-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/debug-pack" />
+      <path value="$PROJECT_DIR$/vendor/symfony/property-info" />
+      <path value="$PROJECT_DIR$/vendor/symfony/flex" />
+      <path value="$PROJECT_DIR$/vendor/symfony/cache-contracts" />
+      <path value="$PROJECT_DIR$/vendor/symfony/routing" />
+      <path value="$PROJECT_DIR$/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/vendor/symfony/dotenv" />
+      <path value="$PROJECT_DIR$/vendor/symfony/form" />
+      <path value="$PROJECT_DIR$/vendor/symfony/twig-bridge" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-client" />
+      <path value="$PROJECT_DIR$/vendor/symfony/intl" />
+      <path value="$PROJECT_DIR$/vendor/symfony/filesystem" />
+      <path value="$PROJECT_DIR$/vendor/symfony/process" />
+      <path value="$PROJECT_DIR$/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/vendor/symfony/debug" />
+      <path value="$PROJECT_DIR$/vendor/symfony/translation-contracts" />
+      <path value="$PROJECT_DIR$/vendor/symfony/stopwatch" />
+      <path value="$PROJECT_DIR$/vendor/symfony/config" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-foundation" />
+      <path value="$PROJECT_DIR$/vendor/symfony/asset" />
+      <path value="$PROJECT_DIR$/vendor/sensio/framework-extra-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/monolog-bridge" />
+      <path value="$PROJECT_DIR$/vendor/symfony/translation" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/annotations" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/orm" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/dbal" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/event-manager" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/cache" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/reflection" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-cache-bundle" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-migrations-bundle" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/migrations" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/common" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/collections" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-bundle" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/persistence" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/type-resolver" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-common" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock" />
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/fig/link-util" />
+      <path value="$PROJECT_DIR$/vendor/zendframework/zend-code" />
+      <path value="$PROJECT_DIR$/vendor/webmozart/assert" />
+      <path value="$PROJECT_DIR$/vendor/zendframework/zend-eventmanager" />
+      <path value="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer" />
+      <path value="$PROJECT_DIR$/vendor/egulias/email-validator" />
+      <path value="$PROJECT_DIR$/vendor/easycorp/easy-log-handler" />
+      <path value="$PROJECT_DIR$/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/vendor/psr/link" />
+      <path value="$PROJECT_DIR$/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/vendor/psr/cache" />
+      <path value="$PROJECT_DIR$/vendor/ocramius/package-versions" />
+      <path value="$PROJECT_DIR$/vendor/ocramius/proxy-manager" />
+      <path value="$PROJECT_DIR$/vendor/symfony/dependency-injection" />
+      <path value="$PROJECT_DIR$/vendor/symfony/security-bundle" />
+      <path value="$PROJECT_DIR$/vendor/jdorn/sql-formatter" />
+      <path value="$PROJECT_DIR$/vendor/symfony/security-guard" />
+      <path value="$PROJECT_DIR$/vendor/symfony/apache-pack" />
+      <path value="$PROJECT_DIR$/vendor/symfony/security-acl" />
+      <path value="$PROJECT_DIR$/vendor/symfony/templating" />
+      <path value="$PROJECT_DIR$/vendor/twig/extensions" />
+      <path value="$PROJECT_DIR$/vendor/sonata-project/cache" />
+      <path value="$PROJECT_DIR$/vendor/sonata-project/core-bundle" />
+      <path value="$PROJECT_DIR$/vendor/sonata-project/block-bundle" />
+      <path value="$PROJECT_DIR$/vendor/sonata-project/exporter" />
+      <path value="$PROJECT_DIR$/vendor/sonata-project/doctrine-extensions" />
+      <path value="$PROJECT_DIR$/vendor/sonata-project/admin-bundle" />
+      <path value="$PROJECT_DIR$/vendor/sonata-project/datagrid-bundle" />
+      <path value="$PROJECT_DIR$/vendor/sonata-project/doctrine-orm-admin-bundle" />
+      <path value="$PROJECT_DIR$/vendor/cocur/slugify" />
+      <path value="$PROJECT_DIR$/vendor/knplabs/knp-menu" />
+      <path value="$PROJECT_DIR$/vendor/knplabs/knp-menu-bundle" />
+      <path value="$PROJECT_DIR$/vendor/sonata-project/easy-extends-bundle" />
+      <path value="$PROJECT_DIR$/vendor/sonata-project/user-bundle" />
+      <path value="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/acl-bundle" />
+      <path value="$PROJECT_DIR$/vendor/pagerfanta/pagerfanta" />
+      <path value="$PROJECT_DIR$/vendor/easycorp/easyadmin-bundle" />
+    </include_path>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="260" />
+    <option name="y" value="85" />
+    <option name="width" value="1400" />
+    <option name="height" value="1000" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="sym2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sym2" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sym2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sym2" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sym2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sym2" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="packages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sym2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sym2" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="packages" type="462c0819:PsiDirectoryNode" />
+              <item name="dev" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sym2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sym2" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="routes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sym2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sym2" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sym2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sym2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sym2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sym2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Entity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sym2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sym2" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SearchEverywhereHistoryKey" value="Symfony\Component\Security\Core\Authorization\Voter\TraceableVoter&#9;null&#9;null&#10;TraceableAccessDecisionManager&#9;null&#9;null&#10;vendor/symfony/security-http/Firewall/AccessListener.php&#9;FILE&#9;file://D:/OSPanel/domains/sym2/vendor/symfony/security-http/Firewall/AccessListener.php&#10;vendor\symfony\http-kernel\HttpKernel.php&#9;FILE&#9;file://D:/OSPanel/domains/sym2/vendor/symfony/http-kernel/HttpKernel.php&#10;routing/sonata_admin.xml&#9;FILE&#9;file://D:/OSPanel/domains/sym2/vendor/sonata-project/admin-bundle/src/Resources/config/routing/sonata_admin.xml&#10;DoctrineExtension.php&#9;FILE&#9;file://D:/OSPanel/domains/sym2/vendor/doctrine/doctrine-bundle/DependencyInjection/DoctrineExtension.php&#10;MergeExtensionConfigurationPass.php&#9;FILE&#9;file://D:/OSPanel/domains/sym2/vendor/symfony/dependency-injection/Compiler/MergeExtensionConfigurationPass.php&#10;DisconnectedMetadataFactory&#9;null&#9;null" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\user\AppData\Roaming\Subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b0a28eb5-1760-40e2-9048-57fed323e466" name="Default" comment="" />
+      <created>1565086062309</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1565086062309</updated>
+      <workItem from="1565086065802" duration="11953000" />
+      <workItem from="1565181589198" duration="11183000" />
+      <workItem from="1565340661492" duration="15397000" />
+      <workItem from="1565600835074" duration="15632000" />
+      <workItem from="1565686714775" duration="769000" />
+    </task>
+    <task id="LOCAL-00001" summary="changes">
+      <created>1565340847499</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1565340847499</updated>
+    </task>
+    <task id="LOCAL-00002" summary="changes add">
+      <created>1565340941899</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1565340941899</updated>
+    </task>
+    <task id="LOCAL-00003" summary="finish study">
+      <created>1565358037258</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1565358037258</updated>
+    </task>
+    <task id="LOCAL-00004" summary="доводка с комплексным lazy load">
+      <created>1565363572514</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1565363572514</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="54934000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1186" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18763326" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.3297769" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.3297769" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="changes" />
+    <MESSAGE value="changes add" />
+    <MESSAGE value="finish study" />
+    <MESSAGE value="доводка с комплексным lazy load" />
+    <option name="LAST_COMMIT_MESSAGE" value="доводка с комплексным lazy load" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/config/packages/fos_user.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="48" selection-start-line="15" selection-start-column="48" selection-end-line="15" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/packages/acl.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="23" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Compiler/MergeExtensionConfigurationPass.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="748">
+          <caret line="75" column="32" selection-start-line="75" selection-start-column="28" selection-end-line="75" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Extension/Extension.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="394">
+          <caret line="107" column="63" selection-start-line="107" selection-start-column="63" selection-end-line="107" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/config/Definition/Processor.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="34" column="54" selection-start-line="34" selection-start-column="54" selection-end-line="34" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/doctrine/doctrine-bundle/DependencyInjection/DoctrineExtension.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="56" column="47" selection-start-line="56" selection-start-column="47" selection-end-line="56" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/config/Definition/ArrayNode.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="289" selection-start-line="289" selection-end-line="289" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/config/Definition/BaseNode.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="330" column="14" selection-start-line="330" selection-start-column="8" selection-end-line="330" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/packages/framework.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/sonata-project/admin-bundle/src/Action/SearchAction.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-754" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/sonata-project/admin-bundle/src/Action/RetrieveFormFieldElementAction.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1026" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/sonata-project/admin-bundle/src/Resources/config/makers.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/sonata-project/admin-bundle/src/Resources/config/routing/sonata_admin.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="76" selection-start-line="8" selection-start-column="61" selection-end-line="8" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/sonata-project/admin-bundle/src/Action/DashboardAction.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-431" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/security-core/Event/VoteEvent.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="23" column="6" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/security-core/Authorization/AccessDecisionManagerInterface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="31" column="20" selection-start-line="31" selection-start-column="20" selection-end-line="31" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Entity/City.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1921">
+          <caret line="113" column="1" selection-start-line="113" selection-start-column="1" selection-end-line="113" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Entity/Address.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="946">
+          <caret line="95" column="1" selection-start-line="95" selection-start-column="1" selection-end-line="95" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Admin/CityAdmin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="38" column="1" selection-start-line="38" selection-start-column="1" selection-end-line="38" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Admin/AddressAdmin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="37" column="1" selection-start-line="37" selection-start-column="1" selection-end-line="37" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/security-core/Authorization/Voter/RoleVoter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="36" column="45" selection-start-line="36" selection-start-column="45" selection-end-line="36" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/security-core/Authorization/Voter/TraceableVoter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="38" column="68" lean-forward="true" selection-start-line="38" selection-start-column="68" selection-end-line="38" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/security-core/Authorization/AccessDecisionManager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="59" column="8" selection-start-line="59" selection-start-column="8" selection-end-line="59" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/security-core/Authorization/TraceableAccessDecisionManager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="59" lean-forward="true" selection-start-line="59" selection-end-line="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/http-kernel/HttpKernel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="70" column="12" selection-start-line="70" selection-start-column="12" selection-end-line="70" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/packages/sonata_admin.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/http-foundation/RequestMatcherInterface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="18" column="10" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Exception/RuntimeException.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="18" column="6" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/sonata-project/user-bundle/src/DependencyInjection/Configuration.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="946">
+          <caret line="77" column="42" selection-start-line="77" selection-start-column="30" selection-end-line="77" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/security-http/AccessMapInterface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/var/cache/dev/ContainerBOSxueF/getSecurity_AccessMapService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="98" selection-start-line="19" selection-start-column="88" selection-end-line="19" selection-end-column="98" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Command/CreateUserCommand.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="13" column="35" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/sonata-project/user-bundle/src/Action/LoginAction.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="487">
+          <caret line="116" column="52" selection-start-line="116" selection-start-column="52" selection-end-line="116" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/security-http/AccessMap.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="31" column="22" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Util/UserManipulator.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="77" column="22" selection-start-line="77" selection-start-column="22" selection-end-line="77" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Model/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="428">
+          <caret line="423" column="45" selection-start-line="423" selection-start-column="45" selection-end-line="423" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Model/UserInterface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-107">
+          <caret line="23" column="10" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/http-foundation/RequestMatcher.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2369" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Entity/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="1" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
+          <folding>
+            <element signature="e#52#102#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes/sonata_admin.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/services.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="38" column="20" selection-start-line="38" selection-start-column="20" selection-end-line="38" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/packages/sonata_user.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/packages/doctrine.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Entity/Group.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="1" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
+          <folding>
+            <element signature="e#53#105#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Blogger/BlogBundle/Entity/Repository/BlogRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="51" selection-start-line="51" selection-end-line="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Repository/LazyEntityRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="946">
+          <caret line="166" column="64" selection-start-line="166" selection-start-column="64" selection-end-line="166" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/packages/security.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="861">
+          <caret line="68" selection-start-line="68" selection-end-line="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/security-http/Firewall/AccessListener.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="742">
+          <caret line="68" selection-start-line="68" selection-end-line="68" />
+          <folding>
+            <element signature="e#7#236#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="Copyright.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
